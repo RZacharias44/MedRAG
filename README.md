@@ -1,9 +1,11 @@
 # MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
 
-### Project Authors
+This paper is accepted by The Web Conference (WWW) 2025!
+
+This is the implementation for our accepted paper *MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot*.
+
+#### Authors
 *Xuejiao Zhao\**,  *Siyan Liu\**,  *Su-Yin Yang*,  *Chunyan Miao\*\**
-
-
 
 \* Both authors contributed equally to the paper
 
@@ -12,6 +14,11 @@
 ---
 
 ## Overview
+
+<div align="center"> <img src="./images/method.png" alt="diseases knowledge graph" width="1000"> </div >
+    <p><em>Figure 1: Results of quantitative performance comparison.</em></p >
+    
+
 **MedRAG** is to designed to enhance **Retrieval-Augmented Generation** (RAG) models by integrating **Knowledge Graph (KG)-elicited reasoning**, specifically for the medical domain. This model helps healthcare professionals generate diagnosis and treatment recommendations based on patient manifestations, improving diagnostic accuracy and reducing the risk of misdiagnosis, particularly for diseases with similar manifestations.
 
 Key features of MedRAG include:
