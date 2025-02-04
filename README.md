@@ -106,4 +106,17 @@ We evaluate KG-elicited reasoning on different LLM backbones, including both ope
     <p><em>Diagnosic difference example.</em></p >
 While lumbar canal stenosis and sciatica share some similar features, the critical distinguishing factor lies in the response to sitting. In lumbar canal stenosis, features are typically alleviated when sitting, whereas in sciatica, sitting tends to exacerbate the discomfort. 
 
+## 📖 Citation
+
+If you find our work useful, please consider citing our paper:
+
+```bibtex
+@inproceedings{Xuejiao2025medrag,
+  title={MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot},
+  author={Xuejiao Zhao, Siyan Liu, Su-Yin Yang, Chunyan Miao},
+  booktitle={Proceedings of the ACM on Web Conference 2025},
+  pages={xxxx--xxxx},
+  year={2025}
+}
+
 
