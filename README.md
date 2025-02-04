@@ -1,7 +1,7 @@
 # MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
 
 ### Project Authors
-**Xuejiao Zhao\***,  *Siyan Liu\**,  *Su-Yin Yang*,  *Chunyan Miao\*\**
+*Xuejiao Zhao\**,  *Siyan Liu\**,  *Su-Yin Yang*,  *Chunyan Miao\*\**
 
 
 
