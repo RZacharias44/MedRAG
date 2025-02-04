@@ -1,8 +1,8 @@
 # MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
 
-This paper is accepted by The Web Conference (WWW) 2025!
+✅ This paper is accepted by The Web Conference (WWW) 2025!
 
-This is the implementation for our accepted paper *MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot*.
+💻 This is the implementation for our accepted paper *MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot*.
 
 #### Authors
 *Xuejiao Zhao\**,  *Siyan Liu\**,  *Su-Yin Yang*,  *Chunyan Miao\*\**
