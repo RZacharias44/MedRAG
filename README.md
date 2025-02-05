@@ -44,8 +44,8 @@ The MedRAG approach addresses the following key challenges:
 
 The full MedRAG test set, including raw image data and annotations, can be downloaded from the links below. Due to the large size of the dataset, a lighter version is also available for quicker testing.
 
-- [Download Full DDXPlus](https://figshare.com/articles/dataset/DDXPlus_Dataset_English_/22687585) : a large-scale, synthesized EHR dataset widely recognized for offering complex, diverse medical diagnosis cases. It includes comprehensive patient data such as socio-demographic information, underlying diseases, symptoms, and antecedents.
-- CPDD: a private EHR dataset in chronic pain from a cooperative hospital.
+- [Download Full DDXPlus](https://figshare.com/articles/dataset/DDXPlus_Dataset_English_/22687585): A large-scale, synthesized EHR dataset widely recognized for offering complex, diverse medical diagnosis cases. It includes comprehensive patient data such as socio-demographic information, underlying diseases, symptoms, and antecedents.
+- CPDD: A private EHR dataset for chronic pain management from our partner hospital, Tan Tock Seng Hospital in Singapore.
 
 ## Usage
 
