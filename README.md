@@ -59,9 +59,9 @@ To use MedRAG, follow these steps:
    Clone this repository to your local machine and install requirements in requirements.txt
 
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/SNOWTEAM2023/MedRAG.git
    
-   cd yourrepository
+   cd MedRAG
    pip install -r requirements.txt
 2. **Modify Tokens**  
    To use your own OpenAI and Hugging Face API tokens, replace the placeholders in the `authentication.py` with your actual tokens. The relevant sections in the code have been left blank for this purpose.
