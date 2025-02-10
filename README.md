@@ -118,8 +118,7 @@ If you find our work useful, please consider citing our paper:
 @inproceedings{Xuejiao2025medrag,
   title={MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot},
   author={Xuejiao Zhao, Siyan Liu, Su-Yin Yang, Chunyan Miao},
-  booktitle={Proceedings of the ACM on Web Conference 2025},
-  pages={xxxx--xxxx},
+  journal={arXiv preprint arXiv:2502.04413},
   year={2025}
 }
 
