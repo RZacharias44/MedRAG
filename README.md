@@ -1,6 +1,6 @@
 # MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
 
-<a href='https://arxiv.org/abs/2307.00040](https://arxiv.org/abs/2502.04413'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='https://arxiv.org/abs/2502.04413'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 ✅ This paper is accepted by [The Web Conference (WWW) 2025](https://www2025.thewebconf.org/)!
 
