@@ -20,7 +20,7 @@
 ## Overview
 
 <div align="center"> <img src="./images/method.png" alt="diseases knowledge graph" width="1000"> </div >
-    <p><em>Figure 1: Results of quantitative performance comparison.</em></p >
+    <p><em>Figure 1:  The overall framework of MedRAG.</em></p >
     
 
 **MedRAG** is to designed to enhance **Retrieval-Augmented Generation** (RAG) models by integrating **Knowledge Graph (KG)-elicited reasoning**, specifically for the medical domain. This model helps healthcare professionals generate diagnosis and treatment recommendations based on patient manifestations, improving diagnostic accuracy and reducing the risk of misdiagnosis, particularly for diseases with similar manifestations.
