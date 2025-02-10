@@ -7,7 +7,7 @@
 💻 This is the official implementation for our accepted paper [*MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot*](https://arxiv.org/abs/2307.00040).
 
 #### Authors
-[Xuejiao Zhao*]([https://wangt-cn.github.io/](https://zxjwudi.github.io/xuejiaozhao/)),  [Siyan Liu*](https://scholar.google.com/citations?user=WR875gYAAAAJ&hl=en),  [Su-Yin Yang](https://www.linkedin.com/in/su-yin-yang-b4304355?originalSubdomain=sg),  [Chunyan Miao**](https://dr.ntu.edu.sg/cris/rp/rp00084)
+[Xuejiao Zhao*](https://zxjwudi.github.io/xuejiaozhao/),  [Siyan Liu*](),  [Su-Yin Yang](https://www.linkedin.com/in/su-yin-yang-b4304355?originalSubdomain=sg),  [Chunyan Miao**](https://dr.ntu.edu.sg/cris/rp/rp00084)
 
 **Nanyang Technological University  &nbsp; | &nbsp;  Tan Tock Seng Hospital &nbsp; |&nbsp; Woodlands Health**
 
