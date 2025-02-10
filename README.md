@@ -115,11 +115,8 @@ While lumbar canal stenosis and sciatica share some similar features, the critic
 If you find our work useful, please consider citing our paper:
 
 ```bibtex
-@inproceedings{Xuejiao2025medrag,
+@inproceedings{zhao2025medrag,
   title={MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot},
-  author={Xuejiao Zhao, Siyan Liu, Su-Yin Yang, Chunyan Miao},
-  journal={arXiv preprint arXiv:2502.04413},
-  year={2025}
+  author={Zhao, Xuejiao and Liu, Siyan and Yang, Su-Yin and Miao, Chunyan},
+  booktitle={THE WEB CONFERENCE 2025}
 }
-
-
