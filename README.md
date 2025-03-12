@@ -19,6 +19,22 @@
 
 ---
 
+## :fire: News
+* **[2024.07.15]** We present [IDOL](https://yhzhai.github.io/idol/), an enhancement of DisCo that simultaneously generates video and depth, enabling realistic 2.5D video synthesis.
+* **[2024.04.08]** DisCo has been accepted by CVPR24. Please check the latest version of paper on [ArXiv](https://arxiv.org/abs/2307.00040).
+* **[2023.12.30]** Update [slides](https://drive.google.com/file/d/1AlN3Thg46RlH5uhLK-ZAIivo-C8IJeif/view?usp=sharing) about introducing DisCo and summarizing recent works.
+* **[2023.11.30]** Update DisCo w/ temporal module.
+* **[2023.10.12]** Update the new ArXiv version of DisCo (Add temporal module; Synchronize FVD computation with MCVD; More baselines and visualizations, etc)
+* **[2023.07.21]** Update the [construction guide](https://github.com/Wangt-CN/DisCo/blob/main/PREPRO.md) of the TSV file.
+* **[2023.07.08]** Update the [Colab](https://colab.research.google.com/drive/1dErsSwSEdcAyP6V_mqayW0qdPuoHSz-j?usp=sharing) Demo (make sure our code/demo can be run on any machine)!
+* **[2023.07.03]** Provide the local demo deployment [example code](https://github.com/Wangt-CN/DisCo#-demo). Now you can try our demo on you own dev machine!
+* **[2023.07.03]** We update the Pre-training [tsv data](https://github.com/Wangt-CN/DisCo#1-human-attribute-pre-training).
+* **[2023.06.28]** We have released DisCo Human Attribute Pre-training Code.
+* **[2023.06.21]** DisCo Human Image Editing [Demo](https://b9652ca65fb3fab63a.gradio.live/) is released! Have a try!
+* **[2023.06.21]** We release the human-specific fine-tuning [code](https://github.com/Wangt-CN/DisCo#human-specific-fine-tuning) for reference. Come and build your own specific dance model!
+* **[2023.06.21]** Release the code for [general fine-tuning](https://github.com/Wangt-CN/DisCo#fine-tuning-with-disentangled-control).
+* **[2023.06.21]** We release the human attribute pre-trained checkpoint and the fine-tuning checkpoint.
+
 ## Overview
 
 <div align="center"> <img src="./images/method.png" alt="diseases knowledge graph" width="1000"> </div >
