@@ -15,7 +15,7 @@
 
 \*\* Corresponding author
 
-(https://res.cloudinary.com/marcomontalbano/image/upload/v1704004581/video_to_markdown/images/youtube--D_mPPjUCDjE-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/D_mPPjUCDjE "DisCo: Disentangled Control for Referring Human Dance Generation in Real World")
+[![Nanyang Technological University Launches Reasoning-Enhanced LLM for Healthcare Copilot](https://res.cloudinary.com/marcomontalbano/image/upload/v1741756409/video_to_markdown/images/youtube--PNIBDMYRfDM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=PNIBDMYRfDM "Nanyang Technological University Launches Reasoning-Enhanced LLM for Healthcare Copilot")
 
 ---
 
