@@ -20,6 +20,7 @@
 ---
 
 ## :fire: News
+* **[2025.03.12]** We release the officially generated [diagnostic knowledge graph for the DDXPlus dataset](https://github.com/SNOWTEAM2023/MedRAG/blob/b935c168f752adbd0a3afae00501f134709810d5/dataset/knowledge%20graph%20of%20DDXPlus.xlsx). Have a try!
 * **[2025.02.25]** The [Chinese Demo](https://www.bilibili.com/video/BV1urPeemEZd/) of MedRAG is now available on Bilibili, and the [English Demo](https://youtu.be/PNIBDMYRfDM) is available on YouTube.
 * **[2025.02.10]** MedRAG reported by the 'Quantum Heart' on [RedNote](https://www.xiaohongshu.com/explore/67a99975000000001800c6cd?app_platform=ios&app_version=8.69.4&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBXfNU2SBF5Pjwuy9JmZYfUVqcLD69q3cV63KFRxtoJxw=&author_share=1&xhsshare=WeixinSession&shareRedId=ODg1Q0Q-Sko2NzUyOTgwNjg0OTk4Nj5O&apptime=1739195717&share_id=0a20c14eada548b98f6c0a37f014267d&wechatWid=e5abb2017c8f43ce7e2a0a478fb5c5bd&wechatOrigin=menu).
 * **[2025.02.04]** We release the official implementation of MedRAG.
