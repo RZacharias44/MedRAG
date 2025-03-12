@@ -20,9 +20,10 @@
 ---
 
 ## :fire: News
-* **[2025.02.25]** The [Chinese demo}(https://www.bilibili.com/video/BV1urPeemEZd/) of MedRAG is now available on Bilibili, and the [English demo](https://youtu.be/PNIBDMYRfDM) is available on YouTube.
+* **[2025.02.25]** The [Chinese demo](https://www.bilibili.com/video/BV1urPeemEZd/) of MedRAG is now available on Bilibili, and the [English demo](https://youtu.be/PNIBDMYRfDM) is available on YouTube.
+* **[2025.02.04]** We release the official implementation of MedRAG.
 * **[2025.01.20]** MedRAG has been accepted by WWW'25. Please check the latest paper version on [ArXiv](https://arxiv.org/abs/2307.00040).
-* **[2023.06.21]** We release the official implementation of MedRAG.
+
 
 ## Overview
 
