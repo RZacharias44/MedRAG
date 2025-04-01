@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-**Contact us through the author's email.**
+**"Leave your email address and we will contact you when we are available."**
