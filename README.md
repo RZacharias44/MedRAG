@@ -1,4 +1,4 @@
-# MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
+![image](https://github.com/user-attachments/assets/6351ed07-82bf-45de-9b1c-8318a644627d)# MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
 
 <a href='https://arxiv.org/abs/2502.04413'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
@@ -20,6 +20,8 @@
 ---
 
 ## :fire: News
+* **[2025.05.14]** Added explanation of the processed dataset file `AI Data Set with Categories.csv`, including guidance on dataset extension and feature customization.
+
 * **[2025.04.10]** Removed unused imports and fixed missing module issue.
 * **[2025.03.24]** MedRAG has recently drawn some interest from media outlets and bloggers, such as [Medium](https://medium.com/@jenray1986/medrag-revolutionizing-healthcare-with-knowledge-graph-enhanced-retrieval-augmented-generation-dda38cc9f447), [AI Era](https://mp.weixin.qq.com/s/XR7G3IZib0mbenSRFcP2NA), and [CSDN](https://blog.csdn.net/weixin_44292902/article/details/146162978?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522f4075b96d8be4fda16fa4ccd41cc155f%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=f4075b96d8be4fda16fa4ccd41cc155f&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-5-146162978-null-null.142^v102^pc_search_result_base8&utm_term=medrag). Tks for all the support — we're continuing to improve! 🙏
 * **[2025.03.12]** We release the officially generated [diagnostic knowledge graph for the DDXPlus dataset](https://github.com/SNOWTEAM2023/MedRAG/blob/b935c168f752adbd0a3afae00501f134709810d5/dataset/knowledge%20graph%20of%20DDXPlus.xlsx). Have a try!
@@ -84,7 +86,58 @@ To use MedRAG, follow these steps:
   
    # Replace with your Hugging Face API token
    hf_token = "your_huggingface_api_token"
-4. **Run the `main.py` script**  
+3. **Preprocess Dataset**
+   
+   The processed dataset is saved in the file AI Data Set with Categories.csv. In this file, each row represents an individual patient. The columns include the patient ID, clinical manifestations (such as symptoms, activity limitations, and other features provided in the dataset), and corresponding diagnostic labels. Specifically, the diagnosis information is organized under the columns Processed Diagnosis, Level 2, and Level 1, representing the disease name, subcategory, and category, respectively.
+
+   Dataset Extension: You can also customize the selection of features based on the characteristics of different datasets. For example, additional information such as geographic region, demographic attributes, or comorbidities can be incorporated during preprocessing, depending on data availability and downstream modeling needs. The current design is modular and easily extensible for broader dataset applications. To make such changes, you only need to modify the logic in the `main_get_category_and_level3` function in `KG_Retrieve.py` accordingly.
+
+<!-- | Participant No. |  Age  |  Symptom  | Activity limitations | Processed Diagnosis |  Level 2     |   Level 1    | -->
+<!--|:---------------:|:-----:|:---------:|:--------------------:|:-------------------:|:------------:|:------------:|-->
+<!--|        1        |  57   | Symptom1  |     Limitation1      |      Disease1       | Subcategory1 |  Category1   |-->
+<!--|        2        |  36   | Symptom2  |     Limitation2      |      Disease2       | Subcategory2 |  Category2   |-->
+
+<!--Below is the page-centered version of the table above-->
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>Participant No.</th>
+      <th>Age</th>
+      <th>Symptom</th>
+      <th>Activity limitations</th>
+      <th>Processed Diagnosis</th>
+      <th>Level 2</th>
+      <th>Level 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">57</td>
+      <td align="center">Symptom1</td>
+      <td align="center">Limitation1</td>
+      <td align="center">Disease1</td>
+      <td align="center">Subcategory1</td>
+      <td align="center">Category1</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">36</td>
+      <td align="center">Symptom2</td>
+      <td align="center">Limitation2</td>
+      <td align="center">Disease2</td>
+      <td align="center">Subcategory2</td>
+      <td align="center">Category2</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+5. **Run the `main.py` script**  
    Once the paths and tokens have been updated, run the `main.py` file to start the program:
    
    ```python
