@@ -6,7 +6,7 @@
 
 ## Appendix A. Doctor Evaluation Framework
 
-To comprehensively evaluate the performance of MedRAG, we engaged experienced medical professionals to assess the system's responses using the QUEST (Quality, Understanding, Expression, Safety, and Trust) evaluation framework proposed by Tam et al. [1]. This framework provides a multi-dimensional assessment of LLM responses across five key dimensions:
+To comprehensively evaluate the performance of MedRAG, we engaged experienced medical professionals to assess the system's responses using the QUEST (Quality, Understanding, Expression, Safety, and Trust) evaluation framework proposed by Tam et al. [1]. This framework provides a multi-dimensional human evaluation of medical LLM responses across five key dimensions:
 
 1. **Quality of Information**: Evaluates the accuracy, relevance, currency, comprehensiveness, consistency, agreement, and usefulness of the information provided in the responses.
 
@@ -22,38 +22,17 @@ For the evaluation process, we selected a subset of test cases from our dataset 
 
 [1] Tam T Y C, Sivarajkumar S, Kapoor S, et al. A framework for human evaluation of large language models in healthcare derived from literature review[J]. NPJ digital medicine, 2024, 7(1): 258.
 
+
+
+
 ## Appendix B. End-to-End Evaluation of Speech-to-Text Integration
 
 To assess the practical applicability of MedRAG in real clinical settings, we conducted an end-to-end evaluation of the speech-to-text (STT) integration module. This evaluation focused on simulating realistic doctor-patient conversations and measuring the system's ability to process and understand spoken medical information.
 
-### Evaluation Design
+We utilized GPT-4 to transform structured EHRs into natural, multi-turn dialogues between doctors and patients. The generated dialogues covered various medical scenarios and included typical clinical terminology and expressions. These simulated dialogues were then converted to speech input, processed by the STT module, and fed into MedRAG's LLM component for final disease diagnosis accuracy evaluation. The results are shown in Figure.
 
-1. **Data Generation**:
-   - We utilized GPT-4o to transform structured EHRs into natural, multi-turn dialogues between doctors and patients
-   - The generated dialogues covered various medical scenarios and included typical clinical terminology and expressions
 
-2. **Evaluation Process**:
-   - The simulated dialogues were converted to speech input
-   - The STT module processed the speech input
-   - The transcribed text was fed into MedRAG's LLM component
-   - Final disease diagnosis accuracy was evaluated
 
-### Results and Analysis
 
-The evaluation results revealed several key findings:
-
-1. **STT Performance**:
-   - The STT module successfully captured the majority of medical terminology
-   - Some natural language variations and speech patterns were preserved in the transcription
-
-2. **LLM Processing**:
-   - The LLM component demonstrated robust error tolerance
-   - Despite potential transcription errors, the system maintained reasonable diagnostic accuracy
-   - The final output maintained clinical relevance while preserving some characteristic "robotic" patterns
-
-3. **Diagnostic Accuracy**:
-   - The system maintained consistent diagnostic accuracy regardless of the input format (text vs. speech)
-   - This suggests that the LLM's strong language understanding capabilities effectively compensated for any STT-related errors
-
-It's important to note that this evaluation focused solely on disease diagnosis accuracy, independent of the STT module's performance metrics. The results demonstrate that MedRAG can effectively process and understand spoken medical information while maintaining its diagnostic capabilities.
+The evaluation results revealed that the STT module successfully captured the majority of medical terminology while preserving some natural language variations and speech patterns. The LLM component demonstrated robust error tolerance, maintaining reasonable diagnostic accuracy despite potential transcription errors. The final output maintained clinical relevance while preserving some characteristic "robotic" patterns. Notably, the system maintained consistent diagnostic accuracy regardless of the input format (text vs. speech), suggesting that the LLM's strong language understanding capabilities effectively compensated for any STT-related errors. It's important to note that this evaluation focused solely on disease diagnosis accuracy, independent of the STT module's performance metrics. The results demonstrate that MedRAG can effectively process and understand spoken medical information while maintaining its diagnostic capabilities.
 
