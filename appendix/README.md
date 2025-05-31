@@ -1,26 +1,33 @@
 # A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning
 
 
+## Appendix A. Demonstration Scenario
 
+### Medical Consultation and Suggested Follow-up Question
 
+| **Speaker**     | **Medical Consultation**                                                                 |
+|------------------|------------------------------------------------------------------------------------------|
+| *Dr. Smith*      | Can you describe the pain? Does it stay in one spot or spread to other areas?          |
+| *Mr. Johnson*    | It starts in my lower back but spreads down my left buttock and leg.                   |
+| *Dr. Smith*      | Do you feel any numbness, tingling, or weakness in your leg?                           |
+| *Mr. Johnson*    | Sometimes my leg feels numb or tingles, especially after sitting for a long time.      |
 
-## Appendix A. Doctor Evaluation Framework
+---
 
-To comprehensively evaluate the performance of MedRAG, we engaged experienced medical professionals to assess the system's responses using a comprehensive evaluation framework. This framework provides a multi-dimensional human evaluation of medical LLM responses across five key dimensions:
+**MedRAG-Suggested Follow-Up Question**
 
-| **Dimension**               | **Description** |
-|----------------------------|-----------------|
-| **Trust**                  | Assesses the extent to which the clinician perceives the system's diagnostic suggestions as credible, reliable, and clinically appropriate. |
-| **Adoption Intention**     | Measures the physician’s willingness to adopt the system's output as a basis for clinical decision-making in their current practice. |
-| **Future Use Likelihood**  | Evaluates the clinician’s intention or likelihood to continue using the system in future clinical scenarios or similar cases. |
-| **Recommendation Willingness** | Captures the user’s inclination to recommend the system to colleagues or peers, reflecting perceived overall value and utility. |
-| **Reliance Level**         | Determines the degree to which clinicians are comfortable relying on the system’s outputs without the need for additional verification or manual cross-checking. |
+| **Speaker**     | **Follow-Up Question**                                                                  |
+|------------------|------------------------------------------------------------------------------------------|
+| *Dr. Smith*      | Does your pain worsen when standing or when sitting?                                   |
+| *Mr. Johnson*    | Standing.                                                                               |
 
-Each dimension is rated on a 5-point Likert scale (1 = Strongly Disagree, 5 = Strongly Agree) based on physicians’ direct interaction with system outputs.
+---
 
-For the evaluation process, we selected three test cases from our dataset along with their corresponding MedRAG generated answers to compare with GPT-4o generated answers. Doctors were then asked to evaluate these responses using this framework criteria scored on a scale of 1 to 5. The evaluation results are presented in Figure, which illustrates the doctors' assessments across different dimensions of the framework.
+Lower back pain is a common complaint in chronic pain management, with multiple potential causes. Among them, lumbar spinal stenosis and sciatica share many overlapping manifestations, including radiating pain, numbness, and discomfort in the lower extremities. This similarity often makes differential diagnosis challenging, especially for less experienced physicians who must rely on precise questioning to uncover key distinguishing features.
 
+Before beginning the consultation, Dr. Smith, a junior chronic pain specialist, initiates a session in MedRAG and activates real-time monitoring. MedRAG is pre-configured with three years of departmental EHR data. The system continuously transcribes her conversation with Mr. Johnson, who reports persistent lower back and leg pain. The recorded medical consultation is presented in the table above.
 
+As the conversation progresses, MedRAG analyzes the dialogue, identifies missing critical information, and suggests a key diagnostic question to Dr. Smith. It then integrates the patient's response into the LLM context. MedRAG differentiates lumbar spinal stenosis from sciatica, noting that pain worsening while standing indicates spinal stenosis, whereas prolonged sitting aggravates sciatica. Based on this, the system generates a preliminary diagnosis, suggesting Mr. Johnson is more likely suffering from lumbar spinal stenosis.
 
 ## Appendix B. End-to-End Evaluation of Speech-to-Text Integration
 
