@@ -6,22 +6,19 @@
 
 ## Appendix A. Doctor Evaluation Framework
 
-To comprehensively evaluate the performance of MedRAG, we engaged experienced medical professionals to assess the system's responses using the QUEST (Quality, Understanding, Expression, Safety, and Trust) evaluation framework proposed by Tam et al. [1]. This framework provides a multi-dimensional human evaluation of medical LLM responses across five key dimensions:
+To comprehensively evaluate the performance of MedRAG, we engaged experienced medical professionals to assess the system's responses using a comprehensive evaluation framework. This framework provides a multi-dimensional human evaluation of medical LLM responses across five key dimensions:
 
-1. **Quality of Information**: Evaluates the accuracy, relevance, currency, comprehensiveness, consistency, agreement, and usefulness of the information provided in the responses.
+| **Dimension**               | **Description** |
+|----------------------------|-----------------|
+| **Trust**                  | Assesses the extent to which the clinician perceives the system's diagnostic suggestions as credible, reliable, and clinically appropriate. |
+| **Adoption Intention**     | Measures the physician’s willingness to adopt the system's output as a basis for clinical decision-making in their current practice. |
+| **Future Use Likelihood**  | Evaluates the clinician’s intention or likelihood to continue using the system in future clinical scenarios or similar cases. |
+| **Recommendation Willingness** | Captures the user’s inclination to recommend the system to colleagues or peers, reflecting perceived overall value and utility. |
+| **Reliance Level**         | Determines the degree to which clinicians are comfortable relying on the system’s outputs without the need for additional verification or manual cross-checking. |
 
-2. **Understanding and Reasoning**: Assesses the system's ability to comprehend medical queries and demonstrate logical reasoning in formulating responses.
+Each dimension is rated on a 5-point Likert scale (1 = Strongly Disagree, 5 = Strongly Agree) based on physicians’ direct interaction with system outputs.
 
-3. **Expression Style and Persona**: Measures the clarity and empathy in the response style, ensuring effective communication with healthcare professionals and patients.
-
-4. **Safety and Harm**: Examines critical safety aspects including bias, potential harm, self-awareness, and the presence of fabrication, falsification, or plagiarism in responses.
-
-5. **Trust and Confidence**: Evaluates the level of trust and satisfaction that users derive from the system's responses.
-
-For the evaluation process, we selected a subset of test cases from our dataset along with their corresponding LLM-generated answers. Doctors were then asked to evaluate these responses using the QUEST framework criteria scored on a scale of 1 to 5. The evaluation results are presented in Figure, which illustrates the doctors' assessments across different dimensions of the framework.
-
-[1] Tam T Y C, Sivarajkumar S, Kapoor S, et al. A framework for human evaluation of large language models in healthcare derived from literature review[J]. NPJ digital medicine, 2024, 7(1): 258.
-
+For the evaluation process, we selected three test cases from our dataset along with their corresponding MedRAG generated answers to compare with GPT-4o generated answers. Doctors were then asked to evaluate these responses using this framework criteria scored on a scale of 1 to 5. The evaluation results are presented in Figure, which illustrates the doctors' assessments across different dimensions of the framework.
 
 
 
