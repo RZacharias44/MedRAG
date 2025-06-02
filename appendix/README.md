@@ -41,3 +41,8 @@ We utilized GPT-4 to transform structured EHRs into natural, multi-turn dialogue
 
 The evaluation results revealed that the STT module successfully captured the majority of medical terminology while preserving some natural language variations and speech patterns. The LLM component demonstrated robust error tolerance, maintaining reasonable diagnostic accuracy despite potential transcription errors. Notably, the system maintained consistent diagnostic accuracy regardless of the input format (text vs. speech), suggesting that the LLM's strong language understanding capabilities effectively compensated for any STT-related errors. It's important to note that this evaluation focused solely on disease diagnosis accuracy, independent of the STT module's performance metrics. The results demonstrate that MedRAG can effectively process and understand spoken medical information while maintaining its diagnostic capabilities.
 
+## Appendix C. Doctor Evaluation
+The table below shows the criteria definitions and specific questions.
+
+<div align="center"> <img src="./Fig/def.png" alt="clustering" width="650"> </div >
+    <p><em>The result of different modalities in CPDD.</em></p >
