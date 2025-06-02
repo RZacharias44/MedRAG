@@ -1,4 +1,4 @@
-# A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning
+# Appendix of Paper "A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning"
 
 
 ## Appendix A. Demonstration Scenario
