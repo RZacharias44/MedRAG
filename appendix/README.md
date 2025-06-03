@@ -1,5 +1,4 @@
-# Appendix of Paper
-# A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning
+# Appendix of Paper “A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning”
 
 
 ## Appendix A. Demonstration Scenario
@@ -33,22 +32,22 @@ As the conversation progresses, MedRAG analyzes the dialogue, identifies missing
 ## Appendix B. End-to-End Evaluation of Speech-to-Text Integration
 To evaluate MedRAG’s robustness in real-world clinical settings, we conducted an end-to-end experiment focusing on its speech-to-text (STT) integration pipeline. This evaluation assessed the system’s ability to process spoken inputs and maintain diagnostic performance.
 
-We utilized GPT-4 to transform structured EHRs into natural, multi-turn dialogues between doctors and patients. The generated dialogues covered various medical scenarios and included typical clinical terminology and expressions. These simulated dialogues were then converted to speech input, processed by the STT module, and fed into MedRAG's LLM component for final disease diagnosis accuracy evaluation. The results are shown in Figure.
+We utilized GPT-4 to transform structured EHRs into natural, multi-turn dialogues between doctors and patients. The generated dialogues covered various medical scenarios and included typical clinical terminology and expressions. These simulated dialogues were then converted to speech input, processed by the STT module, and fed into MedRAG's LLM component for final disease diagnosis accuracy evaluation. The results are shown in the following Table.
 
 
-<div align="center"> <img src="./Fig/Modal_eval.png" alt="clustering" width="400"> </div >
+<div align="center"> <img src="./Fig/Modal_eval.png" alt="clustering" width="350"> </div >
 
 The evaluation results revealed that the STT module successfully captured the majority of medical terminology while preserving some natural language variations and speech patterns. The LLM component demonstrated robust error tolerance, maintaining reasonable diagnostic accuracy despite potential transcription errors. Notably, the system maintained consistent diagnostic accuracy regardless of the input format (text vs. speech), suggesting that the LLM's strong language understanding capabilities effectively compensated for any STT-related errors. It's important to note that this evaluation focused solely on disease diagnosis accuracy, independent of the STT module's performance metrics. The results indicate that MedRAG maintains high diagnostic accuracy even when operating on speech-transcribed inputs, highlighting its resilience to minor transcription errors and its suitability for voice-based clinical interaction.
 
 ## Appendix C. Doctor Evaluation
 We conducted a comparative human evaluation where four experienced doctors reviewed system UI, functionability and outputs from MedRAG and GPT-4o on EHR analysis and medical consultation analysis. 
 
-The table below shows the five human factors criteria and specific questions.
+The table below shows the detailed descriptions and corresponding questions of the five human factors criteria used for the doctor evaluation.
 
-<div align="center"> <img src="./Fig/def.png" alt="clustering" width="900"> </div >
+<div align="center"> <img src="./Fig/def.png" alt="clustering" width="950"> </div >
 
-In this evaluation, we compare the performance of our MedRAG system with the state-of-the-art LLM, GPT-4o. The comparative results are illustrated in the figure below.
-<div align="center"> <img src="./Fig/radar.png" alt="clustering" width="900"> </div >
+In this evaluation, we compare the performance of our MedRAG system with the state-of-the-art LLM GPT-4o. The comparative results are illustrated in the Figure below.
+<div align="center"> <img src="./Fig/radar.png" alt="clustering" width="1000"> </div >
 
-In the UI module, both systems demonstrated similar performance, with MedRAG showing a slight edge in Trust and Adoption Intention. This suggests that MedRAG’s interface design is perceived as marginally more intuitive and clinically usable. In the EHR module, MedRAG clearly outperformed GPT-4o across all five dimensions, particularly in Clinical Relevance and Recommendation. This reflects the system’s tailored design for structured clinical data interpretation and higher reliability in decision support. In the Conversation Monitoring module, MedRAG again achieved consistently higher scores, especially in Trust, Adoption Intention, and Recommendation.
+For the UI aspect, both systems demonstrated similar performance, with MedRAG showing a slight edge in Trust and Adoption Intention. This suggests that MedRAG’s interface design is perceived as marginally more intuitive and clinically usable. For the EHR analysis aspect, MedRAG clearly outperformed GPT-4o across all five criteria, particularly in Clinical Relevance and Recommendation. This reflects the tailored design for structured clinical data interpretation and higher reliability of MedRAG in decision support. For the conversation analysis aspect, MedRAG again achieved consistently higher scores, especially in Trust, Adoption Intention, and Recommendation.
 
