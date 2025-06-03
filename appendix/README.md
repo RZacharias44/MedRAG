@@ -46,7 +46,7 @@ We conducted a comparative human evaluation where four experienced doctors revie
 <div align="center"> <img src="./Fig/def.png" alt="clustering" width="650"> </div >
 
 In this evaluation, we compare the performance of our MedRAG system with the state-of-the-art LLM, GPT-4o. The comparative results are illustrated in the figure below.
-<div align="center"> <img src="./Fig/radar.png" alt="clustering" width="800"> </div >
+<div align="center"> <img src="./Fig/radar.png" alt="clustering" width="900"> </div >
 
-In the UI module, both systems demonstrated similar performance, with MedRAG showing a slight edge in Trust and Adoption Intention. This suggests that MedRAG’s interface design is perceived as marginally more intuitive and clinically usable. In the EHR module, MedRAG clearly outperformed GPT-4o across all five dimensions, particularly in Clinical Relevance and Recommendation. This reflects the system’s tailored design for structured clinical data interpretation and higher reliability in decision support. In the Conversation Monitoring module, MedRAG again achieved consistently higher scores, especially in Trust, Adoption Intention, and Recommendation. These results indicate that MedRAG provides better overall performance in terms of functionality, usability, and clinical alignment.
+In the UI module, both systems demonstrated similar performance, with MedRAG showing a slight edge in Trust and Adoption Intention. This suggests that MedRAG’s interface design is perceived as marginally more intuitive and clinically usable. In the EHR module, MedRAG clearly outperformed GPT-4o across all five dimensions, particularly in Clinical Relevance and Recommendation. This reflects the system’s tailored design for structured clinical data interpretation and higher reliability in decision support. In the Conversation Monitoring module, MedRAG again achieved consistently higher scores, especially in Trust, Adoption Intention, and Recommendation.
 
