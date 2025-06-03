@@ -45,7 +45,7 @@ We conducted a comparative human evaluation where four experienced doctors revie
 
 The table below shows the five human factors criteria and specific questions.
 
-<div align="center"> <img src="./Fig/def.png" alt="clustering" width="650"> </div >
+<div align="center"> <img src="./Fig/def.png" alt="clustering" width="900"> </div >
 
 In this evaluation, we compare the performance of our MedRAG system with the state-of-the-art LLM, GPT-4o. The comparative results are illustrated in the figure below.
 <div align="center"> <img src="./Fig/radar.png" alt="clustering" width="900"> </div >
