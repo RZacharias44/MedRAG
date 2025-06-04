@@ -177,7 +177,7 @@ While lumbar canal stenosis and sciatica share some similar features, the critic
 
 ## 📖 Citation
 
-If you find our work useful, please consider citing our paper:
+If you find our work useful, please consider citing our papers:
 
 ```bibtex
 @inproceedings{zhao2025medrag,
@@ -186,4 +186,14 @@ If you find our work useful, please consider citing our paper:
   booktitle={Proceedings of the ACM on Web Conference 2025},
   pages={4442--4457},
   year={2025}
+}
+
+@misc{zhao2025smartmultimodalhealthcarecopilot,
+      title={A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning}, 
+      author={Xuejiao Zhao and Siyan Liu and Su-Yin Yang and Chunyan Miao},
+      year={2025},
+      eprint={2506.02470},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2506.02470}, 
 }
