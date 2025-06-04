@@ -2,9 +2,9 @@
 
 <a href='https://arxiv.org/abs/2502.04413'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-✅ This paper is accepted by [The Web Conference (WWW) 2025](https://www2025.thewebconf.org/)!
+✅ This paper has been accepted by [The Web Conference (WWW) 2025](https://www2025.thewebconf.org/), and the demo of MedRAG has been accepted by [The 34th International Joint Conference on Artificial Intelligence (IJCAI) 2025](https://2025.ijcai.org/).
 
-💻 This is the official implementation for our accepted paper [*MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot*](https://arxiv.org/abs/2502.04413).
+💻 This is the official implementation for our accepted paper [*MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot*](https://arxiv.org/abs/2502.04413) and partial implementation for our accepted paper [*A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning*](https://arxiv.org/abs/2506.02470).
 
 #### Authors
 [Xuejiao Zhao*](https://zxjwudi.github.io/xuejiaozhao/),  [Siyan Liu*](https://scholar.google.com/citations?hl=zh-CN&user=v087WWIAAAAJ),  [Su-Yin Yang](https://www.linkedin.com/in/su-yin-yang-b4304355?originalSubdomain=sg),  [Chunyan Miao**](https://dr.ntu.edu.sg/cris/rp/rp00084)
@@ -20,8 +20,8 @@
 ---
 
 ## :fire: News
+* **[2025.06.04]** Our demo paper accepted by IJCAI'25 is launched on [arXiv](https://arxiv.org/abs/2506.02470)! We introduced a novel voice modality with corresponding evaluations and conducted a comprehensive doctor evaluation. Check it out [here](https://github.com/SNOWTEAM2023/MedRAG/tree/main/appendix)!.
 * **[2025.05.14]** Added [explanation](#usage) of the processed dataset file `AI Data Set with Categories.csv`, including guidance on dataset extension and feature customization.
-
 * **[2025.04.10]** Removed unused imports and fixed missing module issue.
 * **[2025.03.24]** MedRAG has recently drawn some interest from media outlets and bloggers, such as [Medium](https://medium.com/@jenray1986/medrag-revolutionizing-healthcare-with-knowledge-graph-enhanced-retrieval-augmented-generation-dda38cc9f447), [AI Era](https://mp.weixin.qq.com/s/XR7G3IZib0mbenSRFcP2NA), and [CSDN](https://blog.csdn.net/weixin_44292902/article/details/146162978?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522f4075b96d8be4fda16fa4ccd41cc155f%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=f4075b96d8be4fda16fa4ccd41cc155f&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-5-146162978-null-null.142^v102^pc_search_result_base8&utm_term=medrag). Tks for all the support — we're continuing to improve! 🙏
 * **[2025.03.12]** We release the officially generated [diagnostic knowledge graph for the DDXPlus dataset](https://github.com/SNOWTEAM2023/MedRAG/blob/b935c168f752adbd0a3afae00501f134709810d5/dataset/knowledge%20graph%20of%20DDXPlus.xlsx). Have a try!
