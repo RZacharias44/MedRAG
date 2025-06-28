@@ -17,6 +17,8 @@
 
 [![Nanyang Technological University Launches Reasoning-Enhanced LLM for Healthcare Copilot](https://res.cloudinary.com/marcomontalbano/image/upload/v1741756409/video_to_markdown/images/youtube--PNIBDMYRfDM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=PNIBDMYRfDM "Nanyang Technological University Launches Reasoning-Enhanced LLM for Healthcare Copilot")
 
+[![Stargazers repo roster for @SNOWTEAM2023/MedRAG](https://reporoster.com/stars/SNOWTEAM2023/MedRAG)](https://github.com/SNOWTEAM2023/MedRAG/stargazers)
+
 ---
 
 ## :fire: News
