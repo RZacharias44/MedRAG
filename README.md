@@ -194,6 +194,7 @@ If you find our work useful, please consider citing our papers:
       title={A Smart Multimodal Healthcare Copilot with Powerful LLM Reasoning}, 
       author={Xuejiao Zhao and Siyan Liu and Su-Yin Yang and Chunyan Miao},
       year={2025},
+      booktitle={Proceedings of the 34th International Joint Conference on Artificial Intelligence, {IJCAI-25}},
       eprint={2506.02470},
       archivePrefix={arXiv},
       primaryClass={cs.AI},
