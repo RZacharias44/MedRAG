@@ -6,7 +6,7 @@ psutil==6.0.0
 PyYAML==6.0.2
 safetensors==0.4.5
 torch==2.4.1
-en-core-web-sm==3.7.1
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
 spacy==3.7.5
 faiss-cpu==1.8.0.post1
 nltk==3.9.1
@@ -28,3 +28,4 @@ sentencepiece==0.2.0
 transformers==4.45.1
 tokenizers==0.20.0
 wheel==0.44.0
+python-dotenv==1.0.1

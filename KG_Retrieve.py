@@ -20,8 +20,8 @@ nltk.download('stopwords')
 api_key = ''
 client = openai.OpenAI(api_key=api_key)
 
-KG_file_path = './dataset/knowledge graph of chronic pain.xlsx'
-file_path = './dataset/AI Data Set with Categories.csv'
+KG_file_path = './dataset/knowledge graph of DDXPlus.xlsx'
+file_path = './dataset/DDXPlus_ground_truth.csv'
 embedding_save_path = './Embeddings_saved/CP_KG_embeddings'
 
 
@@ -238,21 +238,27 @@ def print_symptom_and_disease(symptom_nodes):
 
 
 def main_get_category_and_level3(n, participant_no,top_n):
-    data = pd.read_csv(file_path, encoding='ISO-8859-1')
+    data = pd.read_csv(file_path)
 
-    row = data.loc[data['Participant No.'] == str(participant_no)]
+    # Align types for Participant No. matching
+    if 'Participant No.' not in data.columns:
+        print("Participant No. column not found in ground truth")
+        return None
+    try:
+        row = data.loc[data['Participant No.'].astype(int) == int(participant_no)]
+    except Exception:
+        row = data.loc[data['Participant No.'].astype(str) == str(participant_no)]
     if row.empty:
         print(f"Participant No. {participant_no} not found!")
         return None
 
-    tr = row["Level 2"].values[0]
-    tr=tr.split(",")[0]
+    # Optional fields may not exist in DDXPlus ground truth; default to empty strings
+    tr = ''
+    level3real = row.iloc[0].get("Processed Diagnosis", '')
 
-    level3real = row["Processed Diagnosis"].values[0]
-
-    pain_location = row["Pain Presentation and Description"].values[0]
-    pain_symptoms = row["Pain descriptions and assorted symptoms (self-report)"].values[0]
-    pain_restriction = row["Pain restriction"].values[0]
+    pain_location = row.iloc[0].get("Pain Presentation and Description", '')
+    pain_symptoms = row.iloc[0].get("Pain descriptions and assorted symptoms (self-report)", '')
+    pain_restriction = row.iloc[0].get("Pain restriction", '')
     print(f'pain_location: {pain_location}')
     print(f'pain_symptoms: {pain_symptoms}')
     print(f'pain_restrction: {pain_restriction}')

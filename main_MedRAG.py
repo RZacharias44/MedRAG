@@ -8,7 +8,7 @@ import pandas as pd
 from tqdm import tqdm
 from huggingface_hub import InferenceClient
 from KG_Retrieve import main_get_category_and_level3
-from authentication import api_key,hf_token
+from authentication import api_key,hf_token, ob_path
 
 client = openai.OpenAI(api_key=api_key)
 
@@ -228,7 +228,7 @@ def save_results_to_csv(results, output_file):
     df.to_csv(output_file, index=False)
 
 
-folder_path=".dataset/df/train"
+folder_path = ob_path
 documents = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path) if
              os.path.isfile(os.path.join(folder_path, file_name))]
 
