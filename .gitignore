@@ -1,0 +1,9 @@
+dataset/DDXplus/
+
+# Local environment files (do not commit secrets)
+.env
+.env.*
+.venv
+venv/
+
+
