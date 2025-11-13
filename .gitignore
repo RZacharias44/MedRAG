@@ -1,4 +1,14 @@
-dataset/DDXplus/
+# Dataset files (too large for git, regenerate with preprocessing script)
+dataset/DDXPlus/
+dataset/DDXPlus_ground_truth.csv
+dataset/release_train_patients.csv
+dataset/release_test_patients.csv
+dataset/release_validate_patients.csv
+
+# Keep small reference files
+!dataset/release_conditions.json
+!dataset/release_evidences.json
+!dataset/knowledge graph of DDXPlus.xlsx
 
 # Local environment files (do not commit secrets)
 .env
@@ -6,4 +16,13 @@ dataset/DDXplus/
 .venv
 venv/
 
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Embeddings and model artifacts
+Embeddings_saved/
 
