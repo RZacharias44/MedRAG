@@ -17,11 +17,13 @@ from collections import defaultdict
 nltk.download('punkt')
 nltk.download('stopwords')
 
-api_key = ''
+from authentication import api_key
 client = openai.OpenAI(api_key=api_key)
 
-KG_file_path = './dataset/knowledge graph of DDXPlus.xlsx'
-file_path = './dataset/DDXPlus_ground_truth.csv'
+from authentication import augmented_features_path, ground_truth_file_path
+
+KG_file_path = augmented_features_path  # './dataset/knowledge graph of DDXPlus.xlsx'
+file_path = ground_truth_file_path  # './dataset/DDXPlus_ground_truth.csv'
 embedding_save_path = './Embeddings_saved/CP_KG_embeddings'
 
 

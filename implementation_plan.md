@@ -125,35 +125,57 @@ Overall: 5/5 checks passed
 
 ---
 
-## Phase 2: Code Configuration
+## Phase 2: Code Configuration ✅ COMPLETE
 
-The preprocessing script has placed files in the correct locations. Now update the MedRAG code to use these files.
+The preprocessing script has placed files in the correct locations. All code has been updated to work with DDXPlus dataset.
 
-### Step 1: Update File Paths in `authentication.py`
+### ✅ Step 1: File Paths in `authentication.py` (Already Correct)
 
-Open `authentication.py` and modify the path variables:
+Current configuration:
 
 ```python
 # In authentication.py
 ob_path='./dataset/DDXPlus/train'
 test_folder_path="./dataset/DDXPlus/test"
 ground_truth_file_path='./dataset/DDXPlus_ground_truth.csv'
-augmented_features_path='./dataset/knowledge graph of DDXPlus.xlsx - Sheet1.csv'
+augmented_features_path='./dataset/knowledge graph of DDXPlus.xlsx'
 ```
 
-### Step 2: Update Paths in `KG_Retrieve.py`
+**Status:** ✓ No changes needed
 
-Open `KG_Retrieve.py` and ensure paths are correct:
+### ✅ Step 2: Update Paths and API Key in `KG_Retrieve.py` (COMPLETED)
+
+**Changes made:**
 
 ```python
 # In KG_Retrieve.py
-KG_file_path = './dataset/knowledge graph of DDXPlus.xlsx - Sheet1.csv'
-file_path = './dataset/DDXPlus_ground_truth.csv'
+from authentication import api_key, augmented_features_path, ground_truth_file_path
+
+KG_file_path = augmented_features_path
+file_path = ground_truth_file_path
+client = openai.OpenAI(api_key=api_key)
 ```
 
-### Step 3: Update the System Prompt in `main_MedRAG.py`
+**Benefits:** Centralized configuration, no hardcoded credentials
 
-Open `main_MedRAG.py`, find `get_system_prompt_for_RAGKG()`, and replace the hardcoded disease list with the correct list from the DDXPlus KG.
+### ✅ Step 3: Update System Prompt in `main_MedRAG.py` (COMPLETED)
+
+**Changes made:**
+
+1. **Updated disease list** with all 49 DDXPlus pathologies (exact French names):
+   ```
+   Anaphylaxie, Angine instable, Angine stable, Anémie, Asthme exacerbé ou bronchospasme, 
+   Attaque de panique, Bronchiectasies, Bronchiolite, Bronchite, Chagas, Coqueluche, 
+   Céphalée en grappe, Ebola, Embolie pulmonaire, ...
+   ```
+
+2. **Updated output format** from pain-specific to general diagnostics:
+   - Diagnosis with exact French name
+   - Clinical reasoning and differential diagnosis
+   - Follow-up questions
+   - Clinical recommendations
+
+**See:** `PHASE2_COMPLETION_REPORT.md` for complete details
 
 ---
 
