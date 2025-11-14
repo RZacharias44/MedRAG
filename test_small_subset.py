@@ -135,7 +135,7 @@ for idx, test_file in enumerate(tqdm(test_subset, desc="Testing patients")):
             augmented_features_path,
             query, 
             final_retrieved_info, 
-            idx,
+            participant_no,  # Pass actual patient ID, not loop index
             top_n=top_n,
             match_n=match_n,
             model=model

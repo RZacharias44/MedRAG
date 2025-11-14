@@ -1,275 +1,276 @@
 Participant No.,Generated Diagnosis,True Diagnosis,Ori Truth,Generated Report
 1,Péricardite,Péricardite,Péricardite,"### Diagnoses
 1. **Diagnosis**: Péricardite
-2. **Explanations of diagnose**: The patient is a 43-year-old female presenting with significant chest pain that is described as sharp and sudden, with a severity rating of 8. The pain is located in the upper thorax and can radiate to the back. The presence of palpitations suggests a cardiac involvement, aligning with the characteristics of pericarditis, where inflammation of the pericardium can cause pleuritic chest pain and may be associated with palpitations or dyspnea. Given the evidence presented, including the nature of the pain and its associated symptoms, pericarditis stands as the primary diagnosis. Other differential diagnoses such as pulmonary embolism or myocardial infarction must be considered given the similar presentations but are less compatible with the described pain characteristics and absence of risk factors or additional symptoms typically associated with these conditions.
+2. **Explanations of diagnose**: The patient presents with chest pain described as a sudden, sharp pain, which is a classic symptom of péricardite. The pain radiates to the back and appears to be intense (rated 8/10), consistent with the nature of pericardial pain. Associated symptoms such as palpitations and dyspnea further support this diagnosis, as these symptoms can occur due to irritation of the pericardium and cardiac involvement. Differential considerations include conditions that may present with similar chest pain or radiation, but the specific nature of the pain and associated symptoms strongly indicate péricardite.
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - Embolie pulmonaire: Similar acute chest pain and dyspnea, but unlikely given the nature of the pain.
-   - Myocardite: Could present with chest pain and palpitations but typically has additional signs such as fever or general malaise.
-   - Attaque de panique: Can cause pain and palpitations but is usually accompanied by anxiety symptoms and hyperventilation.
-
-### Instructive Questions for Further Evaluation
-1. **Questions**:
-   - Can you describe any specific triggers or events that preceded the onset of your chest pain?
-   - Have you experienced any fever, cough, or other respiratory symptoms?
-   - Have you noticed any patterns in your palpitations or chest pain related to particular activities?
-   - Is there a history of any recent injuries or medical procedures that could relate to your current symptoms?
-
-### Clinical Recommendations
-1. **Immediate Actions**: Perform a physical examination focusing on cardiac and respiratory assessment, including auscultation for heart sounds and any potential pericardial friction rub.
-2. **Diagnostic Tests**: Recommend an ECG to evaluate for any cardiac abnormalities, chest X-ray to assess for other potential causes of the symptoms, and potentially an echocardiogram to assess the pericardial status.
-3. **Treatment Approach**: Initiate anti-inflammatory medications (NSAIDs) for pain management and consider colchicine, if appropriate, while monitoring for any need for further medical intervention based on diagnostic findings.
-
-### Recommendations for Further Evaluations
-1. **Specialist Referrals**: If diagnosis is confirmed, a referral to a cardiologist may be warranted for ongoing management of pericarditis.
-2. **Follow-up Timeline**: Schedule a follow-up in 1-2 weeks to evaluate the response to treatment and further assess symptoms. If symptoms worsen or do not improve, sooner follow-up may be necessary."
-10,Angine instable,Angine instable,Angine instable,"### Diagnoses
-1. **Diagnosis**: Angine instable
-2. **Explanations of diagnose**: The patient, a 65-year-old male, presents with symptoms indicative of angina pectoris, including moderate fatigue and significant chest pain described as heavy or pressing, reported at an intensity of 7 out of 10. The pain is also noted to radiate to the right arm and other regions such as the back and jaw. These symptoms, coupled with sudden onset and association with dyspnea, are characteristic of unstable angina, which is a critical condition often related to obstructive coronary artery disease. The presence of possible NSTEMI/STEMI as a differential further supports the urgency of this diagnosis.
-
-### Differential Diagnosis Considerations
-1. **Primary Diagnosis Confidence**: High
-2. **Alternative Diagnoses**: 
-   - **Possible NSTEMI / STEMI**: Similar presenting symptoms but would require diagnostic confirmation via EKG or troponin levels.
-   - **Attaque de panique**: Could present with chest pain and anxiety but lacks the classic pain characteristics and physiological signs of cardiac involvement.
-   - **OAP/Surcharge pulmonaire**: Should be considered due to dyspnea; however, chest pain patterns and onset differ.
-
-### Instructive Questions for Further Evaluation
-1. **Questions**:
-   - Can you describe the exact nature (sharp, dull, squeezing) of the chest pain?
-   - When did the pain first start, and how long does it usually last?
-   - Are there activities or positions that seem to worsen or alleviate the pain?
-   - Have you experienced any similar episodes in the past?
-   - Are there any accompanying symptoms such as sweating, nausea, or dizziness?
-
-### Clinical Recommendations
-1. **Immediate Actions**: Due to high suspicion for unstable angina, consider immediate hospitalization and monitoring for arrhythmias and hemodynamics.
-2. **Diagnostic Tests**: Obtain an EKG, cardiac enzymes (troponin tests), and possibly a chest X-ray to rule out other causes.
-3. **Treatment Approach**: Initiate treatment with antiplatelet agents (aspirin) and consider nitroglycerin for chest pain relief; prepare for potential cardiac intervention.
-
-### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Refer to a cardiologist for further evaluation and management of potential coronary artery disease.
-2. **Follow-up Timeline**: Schedule a follow-up within 1-2 days to assess ongoing symptoms and response to treatment, especially if initial tests are inconclusive."
-100,Exacerbation aigue de MPOC et/ou surinfection associée,Exacerbation aigue de MPOC et/ou surinfection associée,Exacerbation aigue de MPOC et/ou surinfection associée,"### Diagnoses
-1. **Diagnosis**: Exacerbation aigue de MPOC et/ou surinfection associée
-2. **Explanations of diagnose**: The patient presents with dyspnea, cough, and wheezing, which are consistent with an exacerbation of chronic obstructive pulmonary disease (COPD) possibly with a secondary infection. The evidence supports acute exacerbation due to existing COPD and the likelihood of a superimposed infection is suggested by the worsening of symptoms. Differential diagnoses include bronchitis and pneumonia, which also present with similar respiratory symptoms, but the specific history and evidence more strongly point towards acute exacerbation of COPD.
-
-### Differential Diagnosis Considerations
-1. **Primary Diagnosis Confidence**: High
-2. **Alternative Diagnoses**: 
-   - **Bronchite**: Could be considered because of the cough and wheeze but usually less severe than an exacerbation of COPD.
-   - **Pneumonie**: Similar respiratory symptoms but often presents with fever and more pronounced signs of infection.
-   - **Tuberculose**: Less likely unless there is a specific risk or exposure history, but should still be considered in the backdrop of respiratory symptoms.
+   - Myocardite: Could present with similar symptoms, especially if the inflammation is also affecting cardiac function, but generally involves more significant clinical signs of heart dysfunction.
+   - Embolie pulmonaire: Possible due to chest pain and dyspnea; typically accompanied by pleuritic pain or a distinct risk factor history.
+   - Possible NSTEMI / STEMI: Cardiovascular in nature, could possibly mimic symptoms of péricardite but usually presents with more severe exertional symptoms or ischemic signs on ECG.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**: 
-   - Have you experienced any recent infections or flu-like symptoms prior to this episode?
-   - When did the symptoms start, and how have they progressed?
-   - Do you have a history of smoking or exposure to pollutants?
-   - What treatments have you previously used for COPD, and have they changed?
-   - Have you noticed any specific triggers that worsen your symptoms?
+   - Can you describe the exact character of the chest pain? Does it change with breathing or position?
+   - Have you experienced any recent infections or illnesses, especially respiratory?
+   - Do you have any history of heart disease or connective tissue disorders?
+   - Are there any other symptoms, such as fever, cough, or significant fatigue accompanying these pains?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: Monitor oxygen saturation and consider bronchodilator therapy.
-2. **Diagnostic Tests**: 
-   - Chest X-ray to rule out pneumonia or other complications.
-   - Spirometry to assess lung function.
-   - Sputum culture if infection is suspected.
-3. **Treatment Approach**: 
-   - Initiate bronchodilator therapy.
-   - Consider corticosteroids to reduce inflammation.
-   - Start antibiotics if a bacterial infection is suggested based on sputum analysis or clinical judgment.
+1. **Immediate Actions**: Monitor vital signs and assess for any signs of hemodynamic instability. Consider administering pain relief and oxygen if indicated.
+2. **Diagnostic Tests**: Obtain an ECG, cardiac biomarkers (e.g., troponin levels), and possibly a chest ultrasound or CT imaging to assess for pericardial effusion.
+3. **Treatment Approach**: Initial management may include NSAIDs for pain management and inflammation. If pericarditis is confirmed, follow guidelines related to treatment which may include corticosteroids if the condition is recurrent or associated with other systemic diseases.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Consider referral to a pulmonologist if symptoms do not improve or if hospitalization is required.
-2. **Follow-up Timeline**: Schedule a follow-up within 1-2 weeks to reassess symptoms and response to treatment."
-1000,Rhinosinusite chronique,Rhinosinusite chronique,Rhinosinusite chronique,"### Diagnoses
-1. **Diagnosis**: Rhinosinusite chronique
-2. **Explanations of diagnose**: The patient exhibits persistent symptoms indicative of chronic rhinosinusitis, including facial pain and pressure localized to the forehead, cheeks, and nose. The intensity of pain reported at a level of 6 suggests significant discomfort. Given the age of the patient and the history of chronic symptoms, other conditions such as rhinosinusite aiguë can be ruled out as they would typically present with more acute and severe symptoms.
+1. **Specialist Referrals**: If pericarditis is confirmed, consider referral to a cardiologist for further management and potential echocardiography.
+2. **Follow-up Timeline**: Schedule follow-up within 1 week to assess improvement or any exacerbation of symptoms."
+10,Angine instable,Angine instable,Angine instable,"### Diagnoses
+1. **Diagnosis**: Angine instable
+2. **Explanations of diagnose**: The patient's presentation of modified fatigue, chest pain, and dyspnea in combination with associated symptoms such as radiating pain (to the arm and jaw) aligns strongly with the characteristics of angine instable. Key indicators include the acute nature of the chest pain described as ""épuisante"" and the reported intensity of 7 out of 10, suggesting a significant cardiac event. Alternative considerations include possible NSTEMI/STEMI due to similar symptoms, but the primary focus remains on the unstable angina due to its immediate risk of myocardial infarction.
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - Rhinosinusite aiguë: This could be considered but is less likely due to the chronic nature of the symptoms and the patient's history.
-   - Céphalée en grappe: Possible consideration due to facial pain but this type of headache usually has a different pattern and associated symptoms, such as unilateral pain.
-   - Laryngite aigue: Unlikely as the primary symptoms presented align more closely with sinus involvement rather than laryngeal symptoms.
+   - Possible NSTEMI / STEMI: Similar presentation with chest pain and dyspnea, but angina typically presents with exertion-related pain (the nature of the pain consistency here suggests angine instable).
+   - Péricardite: Presents with chest pain, but typically associated with positional changes and pericardial friction rub which do not appear indicated in this case.
+
+### Instructive Questions for Further Evaluation
+1. **Questions**: 
+   - How long has the chest pain persisted, and does it occur at rest or only with exertion?
+   - Does the pain have any specific pattern or relation to stress or physical activity?
+   - Are there any accompanying symptoms like sweating, nausea, or palpitations?
+   - Have there been any prior episodes of similar pain or cardiovascular conditions?
+
+### Clinical Recommendations
+1. **Immediate Actions**: Administer aspirin and nitroglycerin if indicated; prepare for possible emergency intervention.
+2. **Diagnostic Tests**: Electrocardiogram (ECG) to assess for ischemic changes, and cardiac biomarkers (troponins) to rule out myocardial infarction.
+3. **Treatment Approach**: If stable, initiate antiplatelet therapy, consider beta-blockers, and assess for further cardiac investigation or possible coronary angiography based on the severity of symptoms and findings.
+
+### Recommendations for Further Evaluations
+1. **Specialist Referrals**: Cardiology for further evaluation and management of potential ischemic heart disease.
+2. **Follow-up Timeline**: Immediate follow-up in 24-48 hours post-evaluation, or sooner if symptoms worsen."
+100,Exacerbation aigue de MPOC et/ou surinfection associée,Exacerbation aigue de MPOC et/ou surinfection associée,Exacerbation aigue de MPOC et/ou surinfection associée,"### Diagnoses
+1. **Diagnosis**: Exacerbation aigue de MPOC et/ou surinfection associée
+2. **Explanations of diagnose**: The patient's symptoms of dyspnea (shortness of breath), chronic cough, and wheezing align closely with an acute exacerbation of Chronic Obstructive Pulmonary Disease (COPD). The association with possible infection is supported by the history of cough and wheezing, which can indicate bronchial inflammation or infection. Differential considerations include bronchitis and pneumonia, both of which can present with similar respiratory symptoms, but the patient's history points more strongly toward COPD exacerbation, especially considering the age and sex of the patient.
+
+### Differential Diagnosis Considerations
+1. **Primary Diagnosis Confidence**: High
+2. **Alternative Diagnoses**: 
+   - Bronchite: Although it can cause similar symptoms, it typically lacks the chronicity and underlying COPD history.
+   - Pneumonie: Would require signs of fever or localized lung findings which are not mentioned here.
+   - Tuberculose: Less likely without travel history or specific symptoms indicative of TB.
+
+### Instructive Questions for Further Evaluation
+1. **Questions**: 
+   - Can you describe the onset and duration of your cough and dyspnea?
+   - Have you noticed any specific triggers that worsen your symptoms?
+   - Are there any associated symptoms such as fever, chills, or night sweats?
+   - Have you had any recent respiratory infections or increased sputum production?
+
+### Clinical Recommendations
+1. **Immediate Actions**: Consider administering bronchodilators or corticosteroids to manage acute symptoms.
+2. **Diagnostic Tests**: Obtain a chest X-ray to rule out pneumonia or other complications, and consider sputum analysis if infection is suspected.
+3. **Treatment Approach**: Initiate bronchodilator therapy and systemic corticosteroids as needed from clinical protocol for COPD exacerbation, especially if there are signs of infection.
+
+### Recommendations for Further Evaluations
+1. **Specialist Referrals**: Refer to a pulmonologist for ongoing management of COPD and possible pulmonary rehabilitation.
+2. **Follow-up Timeline**: Schedule follow-up within 1-2 weeks to reassess respiratory status and adjust treatment as necessary."
+1000,Rhinosinusite chronique,Rhinosinusite chronique,Rhinosinusite chronique,"### Diagnoses
+1. **Diagnosis**: Rhinosinusite chronique
+2. **Explanations of diagnose**: The patient presents with chronic sinusitis characterized by persistent facial pain and pressure, particularly around the nose and forehead regions. Key symptoms of rhinosinusite chronique can include continuous nasal obstruction, nasal drainage, and facial pain that may radiate. The differentiation from rhinosinusite aigue is made based on the duration of symptoms, which exceed the duration typically seen in acute cases. Symptoms such as pain localized under the jaw and forehead further support this diagnosis.
+
+### Differential Diagnosis Considerations
+1. **Primary Diagnosis Confidence**: High
+2. **Alternative Diagnoses**: 
+   - **Rhinosinusite aigue**: Although this could present similarly, it typically lasts less than 12 weeks.
+   - **Céphalée en grappe**: Could cause severe pain in the same facial regions but would be episodic rather than chronic.
+   - **Laryngite aigue**: This would generally involve other symptoms like hoarseness or cough, which are absent in this case.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**: 
    - How long have you been experiencing these symptoms?
-   - Have there been any changes in your nasal discharge (color, consistency)?
-   - Do you experience any fever or other systemic symptoms?
-   - Are there specific triggers or factors that worsen your symptoms?
-   - Have you had any prior episodes of sinusitis, and how were they managed?
+   - Are there specific triggers or activities that worsen your pain?
+   - Have you noticed any changes in your nasal discharge (color or volume)?
+   - Do you have any associated symptoms, like fever or fatigue, that may help in evaluating your condition?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: Monitor for any acute changes in symptoms, such as a sudden increase in pain or fever, that may indicate an exacerbation or superinfection.
-2. **Diagnostic Tests**: Consider imaging studies like a sinus CT scan if symptoms persist despite initial management, to assess for any anatomical issues or complications.
-3. **Treatment Approach**: Initial management may include nasal corticosteroids, saline irrigation, and possibly a course of antibiotics if there is evidence of a bacterial infection.
+1. **Immediate Actions**: None immediately required, but addressing hydration and symptomatic relief with analgesics may be beneficial.
+2. **Diagnostic Tests**: A CT scan of the sinuses may be recommended to assess for any anatomical issues or complications. Consideration of nasal endoscopy can also be useful for direct visualization.
+3. **Treatment Approach**: Initial management includes saline nasal irrigation and intranasal corticosteroids to reduce inflammation. If bacterial superinfection is suspected, appropriate antibiotics may be considered.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: An ENT specialist may be warranted for persistent symptoms or if imaging suggests anatomical abnormalities.
-2. **Follow-up Timeline**: A follow-up appointment should be scheduled in 4 to 6 weeks to evaluate treatment efficacy and symptom resolution."
+1. **Specialist Referrals**: Referral to an Ear, Nose, and Throat (ENT) specialist may be warranted for assessment and management.
+2. **Follow-up Timeline**: A follow-up appointment in 4-6 weeks to reassess symptoms and treatment response would be advisable."
 1001,Lupus érythémateux disséminé (LED),Lupus érythémateux disséminé (LED),Lupus érythémateux disséminé (LED),"### Diagnoses
 1. **Diagnosis**: Lupus érythémateux disséminé (LED)
-2. **Explanations of diagnose**: The patient is a 30-year-old female presenting with notable pain in several areas, including the ankle and wrist, alongside reported skin lesions that are red and elevated. The presence of pain, described as ""vivante"" (sharp) and a pain intensity of 5, aligns with symptoms typically associated with LED, which can involve joint pain and a characteristic rash. Furthermore, associated symptoms of dyspnea and hypersensitivity may indicate systemic involvement, characteristic of LED.
+2. **Explanations of diagnose**: The patient presents significant evidence suggestive of systemic involvement typical of lupus érythémateux disséminé, including skin lesions (red and elevated) indicating possible cutaneous lupus, along with reported joint pain characterized by intensity rating of 5. Associated symptoms such as dyspnea and altered sensations (paresthesia) further support an autoimmune etiology. Key differentials, such as myocarditis or possible NSTEMI, also remain relevant due to pain characteristics and potential cardiovascular implications, but the systemic symptoms and skin findings heavily lean towards LED as the primary diagnosis.
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - **Possible NSTEMI / STEMI**: While the patient reports chest discomfort, the clinical context with significant pain in joints and skin lesions leans more towards LED.
-   - **Angine instable**: This could present similarly with chest symptoms but lacks the systemic signs associated with LED. 
-   - **Syndrome de Guillain-Barré**: Neurological symptoms could be considered, but there are no classic motor weakness symptoms or rapid progression typical of this syndrome.
+   - Angine instable: Possible due to pain but lacks supporting cardiovascular risk factors.
+   - Myocardite: Symptoms overlap but less likely without clear heart function or ischemic signs.
+   - Possible NSTEMI / STEMI: Pain presentation could suggest this, but no acute ischemic indicators are noted.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**: 
-   - Can you specify the duration and timing of the skin lesions? Have they changed or evolved?
-   - Are there any other associated systemic symptoms like fever, fatigue, or weight loss?
-   - Have you experienced any joint swelling or stiffness, particularly in the morning?
-   - Do you have a history of autoimmune diseases in your family?
+   - Have you experienced any fever or fatigue recently?
+   - Can you describe any previous episodes of skin rash or joint pain? 
+   - Are there any particular triggers or factors that worsen your symptoms? 
+   - Have you experienced significant weight loss or changes in appetite?
+   - Do you have a personal or family history of autoimmune diseases?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: Consider an urgent evaluation for possible systemic involvement and potential complications related to LED.
+1. **Immediate Actions**: Monitor vital signs closely, assess for any acute distress, and manage symptoms appropriately.
 2. **Diagnostic Tests**: 
-   - Antinuclear antibody (ANA) test and anti-dsDNA antibody test to confirm LED.
-   - Complete blood count (CBC) and inflammatory markers (ESR, CRP) to assess systemic activity.
-3. **Treatment Approach**: Initiate NSAIDs for pain management and consider corticosteroids if significant symptoms or flares are evident.
+   - Complete blood count and comprehensive metabolic panel 
+   - Autoantibody tests (ANA, anti-dsDNA, etc.)
+   - Chest X-ray to evaluate for pulmonary involvement
+   - ECG to rule out any cardiac concerns
+3. **Treatment Approach**: Initiate management with NSAIDs for joint pain, and consider corticosteroids if systemic symptoms escalate. Referral to a rheumatologist is also recommended for further evaluation and management of lupus.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Referral to a rheumatologist for comprehensive management of LED.
-2. **Follow-up Timeline**: Schedule a follow-up within 4-6 weeks or sooner if symptoms worsen, to monitor disease activity and external manifestations."
+1. **Specialist Referrals**: 
+   - Rheumatologist for specialized autoimmune management.
+   - Cardiologist if any cardiac symptoms escalate.
+2. **Follow-up Timeline**: 
+   - Schedule follow-up within 1-2 weeks post initial diagnostic testing to evaluate the treatment response and management plan adjustments."
 1002,Myocardite,Myocardite,Myocardite,"### Diagnoses
 1. **Diagnosis**: Myocardite
-2. **Explanations of diagnose**: The patient presents with chest pain characterized as sharp and located on the left side of the thorax, rated 7/10 in intensity, which can indicate myocardial inflammation. Associated symptoms include palpitations and dyspnea, which are also characteristic of myocarditis. The sudden onset of pain and the presence of severe chest discomfort support this diagnosis. Differential considerations such as NSTEMI/STEMI are also important, but the lack of other common signs like elevated troponins or typical EKG changes often seen in acute coronary syndromes, along with the patient’s additional symptoms, make myocarditis more likely in this case.
+2. **Explanations of diagnose**: The patient presents with severe chest pain described as knife-like, exacerbated by deep breathing, which aligns with classic presentations of myocarditis. Associated symptoms such as dyspnea (difficulty breathing) and palpitations further support this diagnosis. The sudden onset of pain and its localization strengthens the likelihood of myocarditis over other pathologies, particularly considering the age and sex of the patient, who fits the demographic at higher risk for heart-related issues. Differential diagnoses such as NSTEMI/STEMI and pericarditis need to be considered due to overlapping symptoms.
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - Possible NSTEMI / STEMI: Similar symptoms but less likely given current symptom reporting and history.
-   - Péricardite: Can present similarly but typically includes pleuritic pain, often relieved by leaning forward.
-   - Attaque de panique: May explain sudden onset chest discomfort and palpitations but lacks physical findings consistent with cardiac disturbance.
+   - Possible NSTEMI / STEMI: Similar chest pain presentation, though typically with more ionic manifestations like changes in ECG or elevated cardiac biomarkers.
+   - Péricardite: Can present with chest pain but usually with pain relieved by sitting forward or worsened by lying down, which is not reported here.
+   - TSVP: May cause palpitations and related discomfort but distinct in presentation from the severe chest pain noted.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**: 
-   - Can you describe the chest pain (e.g., sharp, dull, pressure)?
-   - Have you experienced any shortness of breath or other symptoms such as sweating or dizziness?
-   - What triggers or alleviates the pain, if anything?
-   - Have you had any recent infections or illnesses?
-   - Do you have any previous history of heart disease or autoimmune disease?
+   - Can you describe whether the chest pain radiates to other locations, such as the arms or jaw?
+   - Have you experienced any fever, fatigue, or recent infections?
+   - Did you engage in any strenuous activity or experience any recent respiratory symptoms prior to the onset of your chest pain?
+   - How would you rate the intensity of your dyspnea on a scale of 1 to 10?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: Monitor vital signs continuously; consider immediate cardiac evaluation if symptoms worsen.
-2. **Diagnostic Tests**: ECG, cardiac troponin levels, and possible echocardiogram to assess cardiac function and rule out pericarditis or other myocardial conditions.
-3. **Treatment Approach**: Initiate treatment aimed at managing symptoms and monitoring for worsening heart function; anti-inflammatories may be appropriate if myocarditis is confirmed.
+1. **Immediate Actions**: Consider immediate ECG monitoring and assessment for potential cardiac enzyme elevation.
+2. **Diagnostic Tests**: Perform blood tests for cardiac markers (troponins), inflammatory markers, chest X-ray, and possibly echocardiogram to assess cardiac function and structure.
+3. **Treatment Approach**: If myocarditis is confirmed, initiate management tailored to severity, which may include anti-inflammatory medications and close monitoring for complications.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Refer to a cardiologist for specialized evaluation and management of myocarditis.
-2. **Follow-up Timeline**: Schedule a follow-up consultation in 1 week or sooner if symptoms worsen."
+1. **Specialist Referrals**: Cardiology referral for comprehensive cardiac evaluation and management.
+2. **Follow-up Timeline**: Arrange for follow-up within one week or sooner if symptoms worsen, to reassess clinical status and test results."
 1003,Bronchiectasies,Bronchiectasies,Bronchiectasies,"### Diagnoses
 1. **Diagnosis**: Bronchiectasies
-2. **Explanations of diagnose**: The diagnosis of bronchiectasies is supported by the presence of significant clinical evidence such as chronic cough and sputum production (evidenced by ""crach_sg""). Patients typically present with recurrent infections and may demonstrate symptoms of dyspnea. Differential considerations include bronchite, pneumonie, and tuberculose, which also present with cough and respiratory symptoms, but bronchiectasies is characterized by the permanent dilation of the bronchi, leading to ongoing respiratory issues. 
+2. **Explanations of diagnose**: Bronchiectasies are characterized by the abnormal and permanent dilation of bronchi, often resulting from chronic inflammation, recurrent infections, or airway obstruction. Key supporting symptoms include chronic productive cough (indicated by ""crach_sg""), increased sputum production, and potentially associated respiratory distress. The differential diagnosis includes bronchite and pneumonie, with bronchite typically presenting with a more acute or transient cough and less sputum, while pneumonie involves fever, pleuritic chest pain, and potentially abnormal lung sounds on examination.
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - **Bronchite**: Chronic cough and possibly sputum production, but typically resolves with treatment and lacks permanent airway damage.
-   - **Pneumonie**: Presents with cough and fever but usually has a distinct acute onset and is treatable with antibiotics.
-   - **Tuberculose**: Associated with significant systemic symptoms (fever, night sweats) and requires specific testing for confirmation.
+   - **Bronchite**: Involves a similar cough but is usually more acute with less purulent sputum.
+   - **Pneumonie**: Presents with fever and acute symptoms that would be atypical for a chronic condition like bronchiectasies.
+   - **Tuberculose**: While it can also cause chronic cough and sputum production, it often includes systemic symptoms such as weight loss and night sweats.
+
+### Instructive Questions for Further Evaluation
+1. **Questions**: 
+   - What are the characteristics of the sputum (color, consistency, presence of blood)?
+   - How long have you been experiencing your symptoms?
+   - Have you noticed any specific triggers or factors that worsen your condition?
+   - Are there any associated symptoms such as fever, weight loss, or night sweats?
+   - Do you have a history of respiratory infections, or previous diagnoses of lung disease?
+
+### Clinical Recommendations
+1. **Immediate Actions**: Consider a chest x-ray to evaluate lung structure and possible infections or complications.
+2. **Diagnostic Tests**: 
+   - Sputum culture to identify infectious pathogens.
+   - Pulmonary function tests to assess airflow obstruction and lung capacity.
+   - Possibly a CT scan of the chest for a more comprehensive assessment of bronchial architecture.
+3. **Treatment Approach**: Initiate bronchodilators or expectorants to aid in symptom relief, and consider starting antibiotics if a bacterial infection is suspected based on culture results.
+
+### Recommendations for Further Evaluations
+1. **Specialist Referrals**: Referral to a pulmonologist for comprehensive management of bronchiectasies may be warranted for further evaluation and treatment options.
+2. **Follow-up Timeline**: A follow-up appointment in 4–6 weeks post initial evaluation to assess response to treatment and any necessary adjustments to management."
+1004,Pneumonie,Pneumonie,Pneumonie,"### Diagnoses
+1. **Diagnosis**: Pneumonie
+2. **Explanations of diagnose**: The patient presents with cough, fever, chills, and sharp chest pain localized to the thoracic region, which are hallmark symptoms of pneumonia. The description of pain as sharp, akin to being ""stabbed,"" also correlates with pleuritic pain often seen in pneumonia cases. Given the patient's age and gender, pneumonia remains a very likely etiology considering the differential analysis.
+
+### Differential Diagnosis Considerations
+1. **Primary Diagnosis Confidence**: High
+2. **Alternative Diagnoses**: 
+   - **Bronchite**: While it can present similarly, it typically does not exhibit fever and localized sharp pain to this extent.
+   - **Possible influenza ou syndrome virémique typique**: This can also cause fever and cough but would likely include more systemic viral symptoms.
+   - **Tuberculose**: This is less common but could present similarly with prolonged cough and systemic features, though more chronic in nature.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**:
-   - Can you describe the nature and frequency of your cough?
-   - Have you noticed any changes in sputum color or quantity?
-   - Do you experience any fevers, night sweats, or weight loss?
-   - Are there any specific triggers that worsen your symptoms (e.g., exercise, allergens)?
-   - Have you had any recent respiratory infections or contact with patients who have respiratory illnesses?
+   - Have you experienced any shortness of breath with physical activity or at rest?
+   - When did your cough and fever start; has there been any recent illness or exposure to sick individuals?
+   - Have you experienced any night sweats or weight loss?
+   - Do you have any history of respiratory illness or smoking?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: Consider initiating a referral for a chest CT scan to evaluate the extent of bronchial dilation and any associated lung pathology.
-2. **Diagnostic Tests**: Sputum culture, pulmonary function tests, and possibly bronchoscopy if needed for further evaluation.
-3. **Treatment Approach**: A management plan may include inhaled bronchodilators and corticosteroids, along with antibiotics for any underlying infection if present.
+1. **Immediate Actions**: Assess the patient for respiratory distress and ensure vital signs are stable.
+2. **Diagnostic Tests**:
+   - Chest X-ray to visualize any infiltrates or consolidation indicative of pneumonia.
+   - Complete blood count (CBC) to check for leukocytosis indicating infection.
+   - Sputum culture if productive cough is present to identify pathogen.
+3. **Treatment Approach**: Initiate empirical antibiotic therapy considering community-acquired pneumonia guidelines and manage supportive care, including hydration and antipyretics.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Respiratory specialist for detailed evaluation and management of bronchiectasies.
-2. **Follow-up Timeline**: Schedule follow-up in 4-6 weeks after initial evaluations and any acute interventions."
-1004,Pneumonie,Pneumonie,Pneumonie,"### Diagnoses
-1. **Diagnosis**: Pneumonie
-2. **Explanations of diagnose**: The patient presents with classic symptoms consistent with pneumonia, including fever (indicated by ""friss""), cough (indicated by ""toux""), expectoration (""expecto""), and localized thoracic pain described as severe and stabbing (""douleurxx_carac_@_un_coup_de_couteau""). The pain is predominantly located in the thoraic region, which supports the diagnosis of pneumonia. Other differential diagnoses like bronchitis or influenza should be considered but the acute presentation of fever, cough, and thoracic pain strongly points toward pneumonia as the primary concern.
-
-### Differential Diagnosis Considerations
-1. **Primary Diagnosis Confidence**: High
-2. **Alternative Diagnoses**: 
-   - Bronchite: Similar symptoms but usually less severe and more chronic in nature.
-   - Possible influenza ou syndrome virémique typique: Could explain fever and cough but typically associated with more systemic symptoms, particularly myalgia and malaise.
-   - Tuberculose: Should be considered, particularly if there are risk factors or a history of exposure.
-
-### Instructive Questions for Further Evaluation
-1. **Questions**: 
-   - Can you describe the type and duration of your cough? Is there any blood in your sputum?
-   - Have you experienced any night sweats or weight loss recently?
-   - What is the intensity of your pain on a scale from 1 to 10?
-   - Have you had any recent travel or exposure to sick individuals?
-   - Are there any other symptoms like difficulty breathing, or chest tightness?
-
-### Clinical Recommendations
-1. **Immediate Actions**: Given the presentation, it may be important to conduct a physical examination and consider administering oxygen if the patient shows signs of respiratory distress.
-2. **Diagnostic Tests**: A chest X-ray is recommended to confirm the presence of pneumonia; sputum culture may also be useful for identifying the causative organism.
-3. **Treatment Approach**: Initiate empiric antibiotic therapy based on local guidelines for community-acquired pneumonia. Supportive care, including hydration and antipyretics, should also be provided.
-
-### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Referral to a pulmonologist may be warranted if pneumonia is recurrent or the patient has significant comorbid conditions.
-2. **Follow-up Timeline**: Follow up within 48-72 hours after starting treatment to assess response and adjust therapy as needed based on culture results and clinical improvement."
+1. **Specialist Referrals**: Consider referral to a pulmonologist if there's lack of improvement or if complicated pneumonia is suspected.
+2. **Follow-up Timeline**: Schedule a follow-up within one week to evaluate treatment response and re-assess if symptoms persist or worsen."
 1005,Fibrillation auriculaire/Flutter auriculaire,Fibrillation auriculaire/Flutter auriculaire,Fibrillation auriculaire/Flutter auriculaire,"### Diagnoses
 1. **Diagnosis**: Fibrillation auriculaire/Flutter auriculaire
-2. **Explanations of diagnose**: The patient is a 92-year-old female presenting with irregular pulse (pls_irreg) and symptoms such as dyspnea (dyspn) and dizziness (etourdissement). These symptoms, along with her advanced age, strongly correlate with the diagnosis of fibrillation auriculaire/flutter auriculaire, which is often characterized by rapid and irregular heartbeats causing symptoms like palpitations and shortness of breath. Differential diagnoses include TSVP, OAP/surcharge pulmonaire, and myocardite, which also present with similar symptoms but typically involve different underlying mechanisms or conditions.
+2. **Explanations of diagnose**: The patient is a 92-year-old female presenting with irregular pulse (pls_irreg), palpitations, and associated symptoms of dizziness (etourdissement) and dyspnea (dyspn). These symptoms are indicative of atrial fibrillation, particularly in an elderly patient where underlying heart disease is common. The differential considerations include TSVP and OAP, which could present similarly with dyspnea and palpitations; however, the presence of an irregular heartbeat strongly points towards fibrillation auriculaire. 
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - TSVP: This could also cause palpitations and dizziness, especially in older adults; however, the irregularity of the pulse leans towards fibrillation.
-   - OAP/Surcharge pulmonaire: This condition can coexist and may explain dyspnea but does not typically cause an irregular pulse.
-   - Myocardite: While it can present similarly, it is less likely in this age group unless there's a significant history of infection or systemic illness.
+   - **TSVP**: May mimic some symptoms but generally presents as a more regular rhythm disruption.
+   - **OAP/Surcharge pulmonaire**: Could explain dyspnea, especially in elderly patients with heart failure; however, lacks the hallmark symptom of irregular pulse.
+   - **Myocardite**: Although it can cause similar symptoms, it is less likely without accompanying chest pain or a clear history of infection.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**: 
-   - Have you experienced any recent episodes of chest pain or discomfort?
-   - How long have you been experiencing the palpitations and dyspnea?
-   - Are there specific activities that exacerbate or relieve your symptoms?
-   - Do you have a history of heart disease, hypertension, or other cardiovascular conditions?
-   - Have you noticed any swelling in your legs or feet, or have you experienced any recent infections?
+   - Have you experienced any chest pains or pressure?
+   - Are there any specific triggers for your symptoms, such as exertion or stress?
+   - How long do these episodes of palpitations usually last? 
+   - Are there any other symptoms like swelling in the legs or fatigue?
+   - Have you previously been diagnosed with any heart conditions?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: Obtain an ECG to confirm irregular heart rhythm and assess for other arrhythmias.
-2. **Diagnostic Tests**: Blood tests including electrolytes and cardiac biomarkers, echocardiogram to evaluate heart function, and possibly a chest X-ray to rule out pulmonary issues.
-3. **Treatment Approach**: Initiate rate control using beta-blockers or calcium channel blockers if the patient is symptomatic and has a sustained irregular rhythm. Anticoagulation may be necessary to prevent thromboembolic complications.
+1. **Immediate Actions**: Consider monitoring the patient's heart rate and rhythm through telemetry.
+2. **Diagnostic Tests**: An ECG should be conducted to confirm the presence of atrial fibrillation. Further echocardiography may be indicated to assess cardiac function.
+3. **Treatment Approach**: Depending on the ECG findings, anticoagulation therapy may be initiated to reduce stroke risk, along with rate or rhythm control medications as necessary.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Refer to a cardiologist for further management of atrial fibrillation and possible anticoagulation therapy.
-2. **Follow-up Timeline**: Schedule follow-up within 1-2 weeks after initial management to assess the response to treatment and adjust the therapy as necessary."
+1. **Specialist Referrals**: Referral to a cardiologist for comprehensive evaluation and management plan if confirmed fibrillation.
+2. **Follow-up Timeline**: Schedule a follow-up visit within 1-2 weeks to assess response to treatment and make adjustments as necessary."
 1006,Otite moyenne aigue (OMA),Otite moyenne aigue (OMA),Otite moyenne aigue (OMA),"### Diagnoses
 1. **Diagnosis**: Otite moyenne aigue (OMA)
-2. **Explanations of diagnose**: The patient presents with significant ear pain, which is rated at 8 out of 10 for intensity (indicative of severe pain). The description of pain as sudden and localized to the ear aligns with typical symptoms of otitis media. Additionally, the presence of fever and irritability supports the diagnosis of an acute infection, which further correlates with the findings of a clear rhinorrhea. The differential consideration includes viral upper respiratory infections (IVRS) and Chagas disease, but the acute nature of the pain and associated fever strongly point toward OMA as the primary diagnosis.
+2. **Explanations of diagnose**: The patient presents with acute ear pain (douleurxx) characterized as sharp (douleurxx_carac_@_vive) with a severity rating of 8 out of 10 (douleurxx_intens_@_8). Accompanying symptoms include fever and irritability, which are common in acute otitis media. The clear nasal discharge (rhino_clair) suggests a viral upper respiratory tract infection or allergy, typical preceding factors for OMA. Given the patient’s age and symptom profile, it is crucial to rule out any complications, keeping in mind the recent data regarding upper respiratory infections.
 
 ### Differential Diagnosis Considerations
 1. **Primary Diagnosis Confidence**: High
 2. **Alternative Diagnoses**: 
-   - IVRS ou virémie: While this could explain some symptoms, it is less likely to cause the severe localized ear pain observed in this patient.
-   - Chagas: Though this presents with systemic symptoms, the acute nature of the ear pain and fever are more consistent with OMA than chronic issues usually associated with Chagas disease.
+   - IVRS ou virémie: This could explain the nasal symptoms but does not typically account for the ear-specific pain and fever.
+   - Chagas: Less likely due to the specific symptomatology primarily indicating an ear infection rather than systemic manifestations.
 
 ### Instructive Questions for Further Evaluation
 1. **Questions**: 
-   - Can you describe the onset of your ear pain (sudden or gradual)?
-   - Have you experienced any recent upper respiratory symptoms, such as congestion or cough prior to this?
-   - Are there any other symptoms you have felt, like nausea or changes in hearing?
-   - Do you have a history of recurrent ear infections or any recent upper respiratory infections?
+   - When did the ear pain start, and how has it progressed?
+   - Have you experienced any changes in hearing or balance?
+   - Are there any symptoms of cough or sore throat accompanying your nasal discharge?
+   - Do you have any history of recurrent ear infections?
+   - Have you had any recent upper respiratory infections or allergies?
 
 ### Clinical Recommendations
-1. **Immediate Actions**: If the pain is severe, consider administering analgesics for pain relief; if there is suspicion of severe infection, plan for an urgent evaluation by an ENT specialist.
-2. **Diagnostic Tests**: A physical examination of the ear (otoscopy) is essential. If indicated, a tympanometry could be performed to assess middle ear pressure.
-3. **Treatment Approach**: Depending on the findings from the examination, initiate treatment with analgesics; if bacterial infection is suspected due to the severity of pain and facts of fever, consider prescribing antibiotics.
+1. **Immediate Actions**: Monitor for signs of severe complications, such as a change in hearing or worsening fever.
+2. **Diagnostic Tests**: Consider tympanometry or otoscopy to evaluate for any effusion or perforation in the ear.
+3. **Treatment Approach**: Start with analgesics for pain relief and consider a course of antibiotics if symptoms worsen or fail to improve, particularly if there's no improvement in 48-72 hours.
 
 ### Recommendations for Further Evaluations
-1. **Specialist Referrals**: Referral to an Ear, Nose, and Throat (ENT) specialist may be warranted for further assessment, especially if the symptoms persist despite initial treatment.
-2. **Follow-up Timeline**: Schedule a follow-up within 48-72 hours to reassess the patient's response to treatment and resolution of symptoms."
+1. **Specialist Referrals**: Referral to an ENT specialist may be warranted if there are recurrent infections or complications.
+2. **Follow-up Timeline**: Schedule a follow-up visit in 1 week to reassess symptoms and treatment efficacy."

@@ -89,54 +89,28 @@ level_3_to_level_2 = {
 }
 
 
-def get_additional_info_from_level_2(participant_no,  kg_path,top_n,match_n):
-    level_2_values=main_get_category_and_level3(match_n,participant_no,top_n)
-    additional_info = []
-    if not level_2_values:
-        print(f"No data found for Participant No.: {participant_no}")
+def get_additional_info_from_level_2(participant_no, kg_path, top_n, match_n):
+    """
+    Get KG augmentation for DDXPlus patients.
+    
+    For DDXPlus:
+    - Extracts patient symptoms from Evidences field
+    - Matches symptoms to Knowledge Graph using embeddings
+    - Returns relevant symptom descriptions from KG to augment diagnosis
+    """
+    # Get matched KG symptoms for this patient
+    matched_symptoms = main_get_category_and_level3(match_n, participant_no, top_n)
+    
+    if not matched_symptoms:
+        print(f"No KG augmentation found for Participant No.: {participant_no}")
         return None
-    for level_2_value in level_2_values:
-        relevant_level_3_descriptions = [desc for desc, level2 in level_3_to_level_2.items() if level2 == level_2_value]
-        print("Relevant Level 3 Descriptions:", relevant_level_3_descriptions)
-        if not relevant_level_3_descriptions:
-            print("No Level 3 descriptions found for Level 2:", level_2_value)
-            continue
-
-        kg_data = pd.read_excel(kg_path, usecols=['subject', 'relation', 'object'])
-        if kg_data.empty:
-            print("Knowledge graph data is empty.")
-            return None
-
-        merged_info = {}
-
-        for level_3 in relevant_level_3_descriptions:
-            related_info = kg_data[kg_data['subject'] == level_3]
-
-            if related_info.empty:
-                print(f"No related information found in KG for: {level_3}")
-            else:
-                for _, row in related_info.iterrows():
-                    subject = row['subject']
-                    relation = row['relation'].replace('_', ' ')
-                    obj = row['object']
-
-                    if (subject, relation) in merged_info:
-                        merged_info[(subject, relation)].append(obj)
-                    else:
-                        merged_info[(subject, relation)] = [obj]
-
-        # K
-        additional_info = []
-        for (subject, relation), objects in merged_info.items():
-            sentence = f"{subject} {relation} {', '.join(objects)}"
-            additional_info.append(sentence)
-
-    if not additional_info:
-        print("No additional information found.")
-        return None
-
-    final_info = ', '.join(additional_info)
-    print("Additional Info:", final_info)
+    
+    # For DDXPlus: matched_symptoms are actual symptom descriptions from KG
+    # These are already meaningful text that can augment the LLM prompt
+    final_info = "Relevant symptoms and clinical presentations from Knowledge Graph: " + "; ".join(matched_symptoms)
+    
+    print(f"KG Augmentation ({len(matched_symptoms)} symptoms): {final_info[:200]}...")
+    
     return final_info
 
 

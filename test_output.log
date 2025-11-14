@@ -1,0 +1,268 @@
+[nltk_data] Downloading package punkt to /Users/sunray/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/sunray/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+load existing embeddings...
+======================================================================
+MedRAG Small Subset Test - DDXPlus
+======================================================================
+
+Test Configuration:
+  • Number of test patients: 10
+  • LLM model: gpt-4o-mini
+  • Top-k retrieval: 1
+  • Top-n symptoms: 1
+  • KG matches: 5
+  • Test folder: ./dataset/DDXPlus/test
+  • Ground truth: ./dataset/DDXPlus_ground_truth.csv
+
+✓ Embeddings loaded:
+  • Training documents: 11760
+  • Document embeddings: (11760, 3072)
+  • Ground truth entries: 1470
+  • Test files available: 1470
+
+======================================================================
+Processing 10 test patients...
+======================================================================
+
+Testing patients:   0%|          | 0/10 [00:00<?, ?it/s]
+──────────────────────────────────────────────────────────────────────
+[1/10] Processing: participant_1.json
+Participant No: 1
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  3.02it/s][A100%|██████████| 1/1 [00:00<00:00,  3.01it/s]
+Testing patients:  10%|█         | 1/10 [00:13<02:03, 13.75s/it]  • Retrieving top-1 similar training cases...
+index:  [[9974]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Péricardite
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Péricardite
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[2/10] Processing: participant_10.json
+Participant No: 10
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.47it/s][A100%|██████████| 1/1 [00:00<00:00,  2.47it/s]
+Testing patients:  20%|██        | 2/10 [00:29<01:58, 14.84s/it]  • Retrieving top-1 similar training cases...
+index:  [[3431]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Angine instable
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 10
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Angine instable
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[3/10] Processing: participant_100.json
+Participant No: 100
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.76it/s][A100%|██████████| 1/1 [00:00<00:00,  2.76it/s]
+Testing patients:  30%|███       | 3/10 [00:46<01:51, 15.91s/it]  • Retrieving top-1 similar training cases...
+index:  [[11491]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Exacerbation aigue de MPOC et/ou surinfection associée
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 100
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Exacerbation aigue de MPOC et/ou surinfection associée
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[4/10] Processing: participant_1000.json
+Participant No: 1000
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.51it/s][A100%|██████████| 1/1 [00:00<00:00,  2.51it/s]
+Testing patients:  40%|████      | 4/10 [01:03<01:37, 16.32s/it]  • Retrieving top-1 similar training cases...
+index:  [[835]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Rhinosinusite chronique
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1000
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Rhinosinusite chronique
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[5/10] Processing: participant_1001.json
+Participant No: 1001
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.74it/s][A100%|██████████| 1/1 [00:00<00:00,  2.73it/s]
+Testing patients:  50%|█████     | 5/10 [01:19<01:21, 16.28s/it]  • Retrieving top-1 similar training cases...
+index:  [[5682]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Lupus érythémateux disséminé (LED)
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1001
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Lupus érythémateux disséminé (LED)
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[6/10] Processing: participant_1002.json
+Participant No: 1002
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.03it/s][A100%|██████████| 1/1 [00:00<00:00,  2.02it/s]
+Testing patients:  60%|██████    | 6/10 [01:35<01:04, 16.24s/it]  • Retrieving top-1 similar training cases...
+index:  [[8669]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Myocardite
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1002
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Myocardite
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[7/10] Processing: participant_1003.json
+Participant No: 1003
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  1.60it/s][A100%|██████████| 1/1 [00:00<00:00,  1.60it/s]
+Testing patients:  70%|███████   | 7/10 [01:50<00:46, 15.65s/it]  • Retrieving top-1 similar training cases...
+index:  [[11687]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Bronchiectasies
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1003
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Bronchiectasies
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[8/10] Processing: participant_1004.json
+Participant No: 1004
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.47it/s][A100%|██████████| 1/1 [00:00<00:00,  2.47it/s]
+Testing patients:  80%|████████  | 8/10 [02:03<00:29, 14.74s/it]  • Retrieving top-1 similar training cases...
+index:  [[6086]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Pneumonie
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1004
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Pneumonie
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[9/10] Processing: participant_1005.json
+Participant No: 1005
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.57it/s][A100%|██████████| 1/1 [00:00<00:00,  2.57it/s]
+Testing patients:  90%|█████████ | 9/10 [02:19<00:15, 15.20s/it]  • Retrieving top-1 similar training cases...
+index:  [[2111]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Fibrillation auriculaire/Flutter auriculaire
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1005
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Fibrillation auriculaire/Flutter auriculaire
+  ✓ Success!
+
+──────────────────────────────────────────────────────────────────────
+[10/10] Processing: participant_1006.json
+Participant No: 1006
+  • Patient symptoms loaded
+  • Generating query embedding...
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.55it/s][A100%|██████████| 1/1 [00:00<00:00,  2.55it/s]
+Testing patients: 100%|██████████| 10/10 [02:30<00:00, 14.09s/it]Testing patients: 100%|██████████| 10/10 [02:30<00:00, 15.09s/it]
+  • Retrieving top-1 similar training cases...
+index:  [[4369]]
+  • Extracting information from retrieved cases...
+  • Ground truth: Otite moyenne aigue (OMA)
+  • Generating diagnosis with KG augmentation...
+Found 0 symptom codes for patient 1006
+Decoded symptoms: []...
+No symptoms found after decoding
+Relevant Level 3 Descriptions: []
+No Level 3 descriptions found for Level 2: thoracoabdominal_pain_syndromes
+No additional information found.
+  ✓ Generated diagnosis: Otite moyenne aigue (OMA)
+  ✓ Success!
+
+======================================================================
+✓ TEST COMPLETE!
+======================================================================
+
+Results saved to: ./test_results_subset_10_patients.csv
+
+Summary:
+  • Total patients tested: 10
+  • Successful diagnoses: 10
+  • Failed: 0
+  • Exact matches: 10/10 (100.0%)
+
+You can now:
+  1. Review results in: ./test_results_subset_10_patients.csv
+  2. If everything looks good, run the full experiment on all 1,470 patients
+  3. Modify test parameters (NUM_TEST_PATIENTS, topk, top_n, match_n)
+======================================================================

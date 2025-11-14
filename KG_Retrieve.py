@@ -239,57 +239,205 @@ def print_symptom_and_disease(symptom_nodes):
         subjects = get_subjects_for_objects([symptom], kg_data)
 
 
-def main_get_category_and_level3(n, participant_no,top_n):
-    data = pd.read_csv(file_path)
+def decode_ddxplus_symptom(symptom_code):
+    """
+    Convert DDXPlus symptom codes to readable text for KG matching.
+    
+    DDXPlus uses coded French abbreviations like:
+    - douleurxx → pain
+    - dyspn → dyspnea, shortness of breath
+    - palpit → palpitations
+    - douleurxx_endroitducorps_@_X → pain location X
+    """
+    # Basic symptom code mappings (French to English medical terms)
+    symptom_map = {
+        'douleurxx': 'pain',
+        'dyspn': 'dyspnea shortness of breath',
+        'palpit': 'palpitations',
+        'fievre': 'fever',
+        'toux': 'cough',
+        'nausee': 'nausea',
+        'vomissement': 'vomiting',
+        'diarrhee': 'diarrhea',
+        'fatigue': 'fatigue',
+        'cephalee': 'headache',
+        'vertiges': 'dizziness',
+        'convulsions': 'seizures convulsions',
+        'hemoptysie': 'hemoptysis coughing blood',
+        'douleur_gorge': 'sore throat',
+        'rhinorrhee': 'runny nose rhinorrhea',
+        'otalgie': 'ear pain otalgia',
+        'prurit': 'itching pruritus',
+        'rash': 'rash skin eruption',
+        'oedeme': 'edema swelling',
+        'sueurs': 'sweating perspiration',
+        'frissons': 'chills shivering',
+        'asthenie': 'weakness asthenia',
+        'anorexie': 'loss of appetite anorexia',
+        'douleur_abdo': 'abdominal pain',
+        'douleur_thorax': 'chest pain',
+        'thorax': 'chest thorax',
+        'abdomen': 'abdomen abdominal',
+        'tete': 'head',
+        'dos': 'back',
+        'jambe': 'leg',
+        'bras': 'arm',
+    }
+    
+    # Clean the code
+    code = symptom_code.lower().strip()
+    
+    # Handle location-specific codes (e.g., douleurxx_endroitducorps_@_bas_du_thorax)
+    if '_endroitducorps_@_' in code:
+        # Extract location
+        parts = code.split('_endroitducorps_@_')
+        symptom_base = parts[0] if parts else 'pain'
+        location = parts[1] if len(parts) > 1 else ''
+        location_clean = location.replace('_', ' ')
+        return f"{symptom_map.get(symptom_base, symptom_base)} in {location_clean}"
+    
+    # Handle characteristic codes (e.g., douleurxx_carac_@_vive)
+    if '_carac_@_' in code:
+        parts = code.split('_carac_@_')
+        symptom_base = parts[0] if parts else 'pain'
+        characteristic = parts[1] if len(parts) > 1 else ''
+        characteristic_clean = characteristic.replace('_', ' ')
+        return f"{characteristic_clean} {symptom_map.get(symptom_base, symptom_base)}"
+    
+    # Handle intensity codes (e.g., douleurxx_intens_@_8)
+    if '_intens_@_' in code:
+        parts = code.split('_intens_@_')
+        symptom_base = parts[0] if parts else 'pain'
+        intensity = parts[1] if len(parts) > 1 else ''
+        return f"severe {symptom_map.get(symptom_base, symptom_base)} intensity {intensity}"
+    
+    # Handle irradiation codes (e.g., douleurxx_irrad_@_colonne_dorsale)
+    if '_irrad_@_' in code:
+        parts = code.split('_irrad_@_')
+        symptom_base = parts[0] if parts else 'pain'
+        irrad_location = parts[1] if len(parts) > 1 else ''
+        irrad_clean = irrad_location.replace('_', ' ')
+        return f"{symptom_map.get(symptom_base, symptom_base)} radiating to {irrad_clean}"
+    
+    # Handle other @ codes
+    if '_@_' in code:
+        code = code.split('_@_')[0]
+    
+    # Remove underscores and try direct mapping
+    code_clean = code.replace('_', ' ')
+    
+    # Try to find in symptom map
+    for key, value in symptom_map.items():
+        if key in code:
+            return value
+    
+    # Return cleaned code if no mapping found
+    return code_clean
 
-    # Align types for Participant No. matching
-    if 'Participant No.' not in data.columns:
-        print("Participant No. column not found in ground truth")
-        return None
+
+def main_get_category_and_level3(n, participant_no, top_n):
+    """
+    Extract patient symptoms from DDXPlus data and match to Knowledge Graph.
+    
+    For DDXPlus:
+    - Reads 'Evidences' field from test JSON files (not ground truth CSV)
+    - Decodes symptom codes to readable text
+    - Matches against KG using embeddings
+    - Returns categories for diagnosis augmentation
+    """
+    # Import test_folder_path from authentication
+    from authentication import test_folder_path
+    
+    # Read from test JSON file instead of ground truth CSV
+    test_file_path = os.path.join(test_folder_path, f'participant_{participant_no}.json')
+    
+    if not os.path.exists(test_file_path):
+        print(f"Test file not found for participant {participant_no}: {test_file_path}")
+        return ['thoracoabdominal_pain_syndromes']  # Default category
+    
     try:
-        row = data.loc[data['Participant No.'].astype(int) == int(participant_no)]
-    except Exception:
-        row = data.loc[data['Participant No.'].astype(str) == str(participant_no)]
-    if row.empty:
-        print(f"Participant No. {participant_no} not found!")
-        return None
+        import json
+        with open(test_file_path, 'r') as f:
+            patient_data = json.load(f)
+    except Exception as e:
+        print(f"Error loading test file for participant {participant_no}: {e}")
+        return ['thoracoabdominal_pain_syndromes']  # Default category
 
-    # Optional fields may not exist in DDXPlus ground truth; default to empty strings
-    tr = ''
-    level3real = row.iloc[0].get("Processed Diagnosis", '')
-
-    pain_location = row.iloc[0].get("Pain Presentation and Description", '')
-    pain_symptoms = row.iloc[0].get("Pain descriptions and assorted symptoms (self-report)", '')
-    pain_restriction = row.iloc[0].get("Pain restriction", '')
-    print(f'pain_location: {pain_location}')
-    print(f'pain_symptoms: {pain_symptoms}')
-    print(f'pain_restrction: {pain_restriction}')
-    if pd.isna(pain_location):
-        pain_location = ''
-    if pd.isna(pain_symptoms):
-        pain_symptoms = ''
-    if pd.isna(pain_restriction):
-        pain_symptoms = ''
-
-
+    # Extract DDXPlus Evidences field from JSON
+    evidences_str = patient_data.get("Evidences", '')
+    initial_evidence = patient_data.get("Initial Evidence", '')
+    
+    # Parse the Evidences string (it's a string representation of a Python list)
+    symptom_codes = []
+    if evidences_str and not pd.isna(evidences_str):
+        try:
+            # Use ast.literal_eval to safely parse the string list
+            import ast
+            symptom_codes = ast.literal_eval(evidences_str)
+        except:
+            # Fallback: manual parsing
+            evidences_str = evidences_str.strip("[]'\"")
+            symptom_codes = [s.strip().strip("'\"") for s in evidences_str.split(',') if s.strip()]
+    
+    # Add initial evidence if present
+    if initial_evidence and not pd.isna(initial_evidence):
+        symptom_codes.append(initial_evidence)
+    
+    print(f'Found {len(symptom_codes)} symptom codes for patient {participant_no}')
+    
+    # Decode symptom codes to readable text
+    decoded_symptoms = []
+    for code in symptom_codes[:20]:  # Limit to first 20 symptoms to avoid too much processing
+        decoded = decode_ddxplus_symptom(code)
+        if decoded:
+            decoded_symptoms.append(decoded)
+    
+    print(f'Decoded symptoms: {decoded_symptoms[:5]}...')  # Show first 5
+    
+    # Combine all decoded symptoms into a single text for KG matching
+    combined_symptoms_text = ' '.join(decoded_symptoms)
+    
+    if not combined_symptoms_text:
+        print('No symptoms found after decoding')
+        return ['thoracoabdominal_pain_syndromes']  # Default category
+    
+    # Helper function to process symptom field
     def process_symptom_field(field_value, symptom_nodes, symptom_embeddings, n):
         if pd.isna(field_value) or field_value == '':
             return []
         return find_top_n_similar_symptoms(field_value, symptom_nodes, symptom_embeddings, n)
-
-    top_5_location_nodes = process_symptom_field(pain_location, symptom_nodes, symptom_embeddings, n)
-    top_5_symptom_nodes = process_symptom_field(pain_symptoms, symptom_nodes, symptom_embeddings, n)
-    top_5_painrestriction_nodes = process_symptom_field(pain_restriction, symptom_nodes, symptom_embeddings, n)
-
-
-    top_5_location_nodes_original = kg_data.loc[kg_data['object_preprocessed'].isin(top_5_location_nodes), 'object'].drop_duplicates()
-    top_5_symptom_nodes_original = kg_data.loc[kg_data['object_preprocessed'].isin(top_5_symptom_nodes), 'object'].drop_duplicates()
-    top_5_painrestriction_original = kg_data.loc[kg_data['object_preprocessed'].isin(top_5_painrestriction_nodes), 'object'].drop_duplicates()
-
-
-    most_similar_category = find_closest_category(
-        list(top_5_location_nodes_original) + list(top_5_symptom_nodes_original)+ list(top_5_painrestriction_original),
-        categories,
-        top_n
+    
+    # Match decoded symptoms against KG using embeddings
+    matched_symptom_nodes = process_symptom_field(
+        combined_symptoms_text,
+        symptom_nodes,
+        symptom_embeddings,
+        n * 3  # Get more matches since we're combining symptoms
     )
-    return most_similar_category
+    
+    print(f'Matched {len(matched_symptom_nodes)} KG symptom nodes')
+    
+    if not matched_symptom_nodes:
+        print('No KG symptom matches found')
+        return ['thoracoabdominal_pain_syndromes']  # Default category
+    
+    # Get original symptom text from KG
+    matched_symptoms_original = kg_data.loc[
+        kg_data['object_preprocessed'].isin(matched_symptom_nodes),
+        'object'
+    ].drop_duplicates().tolist()
+    
+    print(f'Matched original symptoms: {matched_symptoms_original[:3]}...')  # Show first 3
+    
+    # For DDXPlus: Return matched symptoms directly instead of trying to find pain categories
+    # The categories (thoracoabdominal_pain_syndromes, etc.) don't exist in DDXPlus KG
+    # Instead, we return the actual matched symptom descriptions from the KG
+    
+    if not matched_symptoms_original:
+        print('No matched symptoms to return')
+        return []
+    
+    print(f'Returning {len(matched_symptoms_original)} matched symptoms as KG augmentation')
+    
+    # Return the matched symptom descriptions (these will be used to augment the diagnosis prompt)
+    return matched_symptoms_original[:top_n * 3]  # Return top symptoms for augmentation
