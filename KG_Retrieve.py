@@ -24,7 +24,7 @@ from authentication import augmented_features_path, ground_truth_file_path
 
 KG_file_path = augmented_features_path  # './dataset/knowledge graph of DDXPlus.xlsx'
 file_path = ground_truth_file_path  # './dataset/DDXPlus_ground_truth.csv'
-embedding_save_path = './Embeddings_saved/CP_KG_embeddings'
+embedding_save_path = './Embeddings_saved/DDXPlus_KG_embeddings'
 
 
 

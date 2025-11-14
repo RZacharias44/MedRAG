@@ -223,7 +223,7 @@ folder_path = ob_path
 documents = [os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path) if
              os.path.isfile(os.path.join(folder_path, file_name))]
 
-document_embeddings_file_path='./dataset/document_embeddings.npy'
+document_embeddings_file_path='./Embeddings_saved/DDXPlus_document_embeddings.npy'
 
 def save_embeddings(embeddings, file_path):
     np.save(file_path, embeddings)
